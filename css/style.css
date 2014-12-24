@@ -10,7 +10,7 @@ BODY
 	font-family: 			'HelveticaNeue', Helvetica, arial, sans-serif;
 	font-size: 				12px;
 	color: 					#000;
-	background: 			#2E0F06 url(../Labels/wood.jpg) repeat top center;
+	background: 			#2E0F06 url(../Labels/background.png) repeat top center;
 	background-size: 		100%;
 	background-attachment: 	fixed;
 }
@@ -185,7 +185,7 @@ center
 }
 .header_wrapper
 {
-	background: 			transparent url(../Labels/header_innen.png) no-repeat bottom center;
+	background-color:       #ff4a00;
 }
 #logo
 {
@@ -203,7 +203,6 @@ center
 
 #header
 {
-	background: 			transparent url(../Labels/header.png) no-repeat bottom center;
 	height: 				276px;
 	width:					100%;
 	margin-bottom: 			10px;
@@ -238,7 +237,7 @@ center
 #footer
 {
 	height: 				171px;
-	background: 			transparent url(../Labels/footer.png) no-repeat top center;
+	background-color: 		#ff4a00;
 	overflow: 				hidden;
     padding-bottom:         45px;
 	/*
@@ -481,7 +480,7 @@ center
 	line-height: 			51px;
 	font-size: 				18px;
 	padding: 				0 0 0 13px;
-	background: 			transparent url(../Labels/wood_line.png) no-repeat top center;
+	background-color: 		#ff4a00;
 	text-shadow: 			1px 1px 2px #000, 1px 1px 2px #000, 1px 1px 2px #000, 1px 1px 2px #000, 1px 1px 2px #000, 1px 1px 2px #000;
 	color: 					#F3F0BD;
 }
@@ -496,10 +495,7 @@ center
 .boxColumn > div
 {
 	padding: 				15px;
-	background-image: url(../Labels/blank.png), url(../Labels/wood_line2.png);
-	background-repeat: no-repeat, repeat-y;
-	background-position: center -2px , top center;
-	background-color: transparent;
+	background-color:       #ff4a00;
 	color:					#000;
 }
 .boxColumn > div p
@@ -1174,9 +1170,7 @@ li.merkzettel a
     width: 				100%;
     margin: 			0 auto;
     padding: 			3px 3px 3px 3px;
-    background-image:   url(../Labels/footer_innen.png);
-    background-repeat:  no-repeat;
-    background-size:    100%;
+    background-color:   #ff4a00;
     text-align: center;
 }
 
