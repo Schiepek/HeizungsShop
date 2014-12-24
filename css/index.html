@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+	<title>{seitentitel}</title>
+	<meta name="author" content="{meta-autor}"/>
+	<meta name="publisher" content="{meta-publisher}"/>
+	<meta name="copyright" content="{meta-copyright}"/>
+	<meta name="keywords" content="{meta-keywords}"/>
+	<meta name="description" content="{meta-description}"/>
+	<meta name="page-topic" content="{meta-pagetopic}"/>
+	<meta name="audience" content="Alle"/>
+	<meta name="expires" content="NEVER"/>
+	<meta name="revisit-after" content="1 days"/>
+	<meta name="page-type" content="{meta-pagetyp}"/>
+	<meta name="robots" content="INDEX,FOLLOW"/>
+	<link rel="stylesheet" type="text/css" href="css/style.php"/>
+	<link rel="SHORTCUT ICON" href="css/favicon.ico"/>
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+	<script type="text/javascript" src="js/jquery-1.6.1.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="js/slides.jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+</head>
+<body>
+<div id="themeing">
+	<h3>Themeauswahl:</h3>
+	<p><a href="/index.php?themecolor=green" class="green" alt="Gr&uuml;n" title="Gr&uuml;n"></a></p>
+	<p><a href="/index.php?themecolor=red" class="red" alt="Rot" title="Rot"></a></p>
+	<p><a href="/index.php?themecolor=blue" class="blue" alt="Blau" title="Blau"></a></p>
+	<p><a href="/index.php?themecolor=orange" class="orange" alt="Orange" title="Orange"></a></p>
+	<p><a href="/index.php?themecolor=purple" class="purple" alt="Lila" title="Lila"></a></p>
+	<big>try it</big>
+	<style type="text/css">
+ 		@import url(http://fonts.googleapis.com/css?family=Handlee);
+ 
+		#themeing
+		{
+			position: 				absolute;
+			left: 					10px;
+			top: 					10px;
+			width:					140px;
+			display: 				inline-block;
+			border: 				1px solid #181818;
+			-webkit-border-radius: 	3px;
+			-moz-border-radius: 	3px;
+			border-radius: 			3px;
+			-moz-box-shadow: 		0px 1px 2px -1px #666;
+			-webkit-box-shadow: 	0px 1px 2px -1px #666;
+			box-shadow: 			0px 1px 2px -1px #666;
+			padding: 				10px;
+		}
+		#themeing h3
+		{
+			float: 					left;
+   			margin: 				0 0 6px 2px;
+    		font-family: 			'Handlee';
+    		color:					#fff;
+    		font-size: 				20px;
+    		text-shadow: 			1px 1px #555;
+		}
+		#themeing big
+		{
+			position: 				absolute;
+			font-family: 			'Handlee';
+    		color:					#59ADFF;
+    		font-size: 				20px;
+    		text-shadow: 			1px 1px #1F68C2;
+    		display: 				block;
+    		top:					80px;
+    		left: 					120px;
+    		font-size: 				25px;
+    		background: 			transparent url(/templates/1_shop_endkunde/css/tryit.png) no-repeat left center; 
+    		padding: 				0 0 0 30px;
+    		white-space: nowrap;
+		}
+		#themeing p
+		{
+			float: 					left;
+			border: 				1px solid #ccc;
+			padding: 				1px;
+			width:					18px;
+			height:					18px;
+   			margin: 				0 2px 0 0;
+		   	background-color: 		#fff;
+		   	-webkit-border-radius: 	3px;
+			-moz-border-radius: 	3px;
+			border-radius: 			3px;
+
+		}
+		#themeing a
+		{
+			display: 				block;
+			color:					#fff;
+            height:					18px;
+            width: 					18px;
+		}
+		#themeing a.green
+		{
+			background-color: 		#8BC936;
+		}
+		#themeing a.red
+		{
+			background-color: 		#9D0000;
+		}
+		#themeing a.blue
+		{
+			background-color: 		#0D1F6A;
+		}
+		#themeing a.orange
+		{
+			background-color: 		#FF7100;
+		}
+		#themeing a.purple
+		{
+			background-color: 		#800389;
+		}
+	</style>
+</div>
+
+
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/de_DE/all.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+	</script>
+	<div id="header">
+		<div id="header_content">
+			<a href="/" class="logo"><img src="Labels/logo.png" alt="" border="0" /></a>
+			<p class="hotline">{conf_telefon}</p>
+			<p class="mail">{bereiche_mail}</p>
+			<div id="warenkorbvorschau">
+				{warenkorb}
+			</div>
+		</div>
+	</div>
+	<div id="navigation_wrapper">
+		<ul id="navigation">
+			{navigation}
+			{warenkorb_suche}
+		</ul>
+	</div>
+	<div id="content_wrap">
+		<table border="0" cellspacing="0" cellpadding="0" id="content" class="fixed" align="center">
+			<tr>
+				{menu_left}
+				<td align="left" valign="top" id="page">{page}</td>
+			</tr>
+		</table>
+	</div>
+	<div id="footer">
+		<div id="footer_content">
+			<p>&copy; {conf_firmenname} {jahr}</p>{menu_footer}
+			
+			<!-- Platzieren Sie dieses Tag an der Stelle, an der die +1-Schaltfläche angezeigt werden soll. -->
+			<g:plusone annotation="inline"></g:plusone>
+			
+			<!-- Platzieren Sie diese Render-Anweisung an einer geeigneten Stelle. -->
+			<script type="text/javascript">
+			  window.___gcfg = {lang: 'de'};
+			
+			  (function() {
+			    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+			    po.src = 'https://apis.google.com/js/plusone.js';
+			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+			  })();
+			</script>
+			<div class="fb-like" data-send="true" data-layout="button_count" data-width="150" data-show-faces="false">
+		</div>
+	</div>
+	<script type="text/javascript" src="js/page.engine.js"></script>
+</body>
+</html>

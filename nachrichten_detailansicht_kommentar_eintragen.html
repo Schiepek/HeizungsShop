@@ -1,0 +1,20 @@
+
+<form id="FormName" action="index.php" method="post" name="FormName">
+	<table width="90%" border="0" cellspacing="2" cellpadding="0" align="center">
+		<tr>
+			<td colspan="2" align="left" valign="top"><strong>Kommentar verfassen:</strong></td>
+		</tr>
+		<tr>
+			<td align="left" valign="top">Titel:</td>
+			<td align="left"><input type="text" name="kommentar_titel" size="30" maxlength="50" class="Feld"></td>
+		</tr>
+		<tr>
+			<td align="left" valign="top">Ihr Kommentar:</td>
+			<td align="left"><textarea name="kommentar_artikel" rows="4" cols="40" class="Feld"></textarea></td>
+		</tr>
+		<tr>
+			<td align="left" valign="top"><input type="hidden" name="nachrichtenid" value="{nachrichtenID}"><input type="hidden" name="ID" value="{ID}"><input type="hidden" name="kommentar_eintragen" value="1"></td>
+			<td align="right"><input type="submit" name="submit" value="Eintragen" class="Button"></td>
+		</tr>
+	</table>
+</form>

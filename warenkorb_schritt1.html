@@ -1,0 +1,42 @@
+<ul class="warenkorb_vorgang box">
+	<li class="aktiv">Bestell&uuml;bersicht</li>
+	<li>Versand</li>
+	<li>Zahlung</li>
+	<li>Kaufen</li>
+</ul>
+{fehlerausgabe}
+<form id="FormName" action="index.php" method="post" name="FormName" class="box boxPage">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" class="warenkorblisting">
+		<tr>
+			<th align="left">Produkt</th>
+			<th align="left" width="30">&nbsp;</th>
+			<th align="left" width="110">Anzahl</th>
+			<th align="right" width="80">Einzelpreis</th>
+			<th align="right" width="120">Gesamtpreis</th>
+		</tr>
+		{artikel}
+	</table>
+	<br/>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+		<tr>
+			<td align="right"><big>Gesamtsumme:</big></td>
+			<td align="right" width="120"><big class="green">{gesamt_preis_brutto2brutto}</big></td>
+		</tr>
+		{mwst}
+	</table>
+	<br/>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+		<tr>
+			<td align="left" width="33%">
+				<input type="submit" name="submit_aktualisieren" value="Aktualisieren" />
+				<input type="hidden" name="schritt" value="1"/>
+			</td>
+			<td align="center" width="33%"></td>
+			<td align="right" width="33%">
+				<input type="hidden" name="ID" value="{ID}"/>
+				<input type="submit" name="submitweiter" value="zur Kasse"/>
+			</td>
+		</tr>
+	</table>
+</form>
+<br/>

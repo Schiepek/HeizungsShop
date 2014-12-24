@@ -1,0 +1,49 @@
+
+<form id="FormName" name="FormName" action="/modul.php" method="post">
+    
+     <table align="center" border="0" cellpadding="2" cellspacing="0" width="80%">
+         <tbody>
+             <tr>
+                 <td align="left"><strong>Vorname: <sup>*</sup></strong></td>
+                 <td align="right"><input size="24" name="Vorname" type="text" /></td>
+             </tr>
+             <tr>
+                 <td align="left"><strong>Name: <sup>*</sup></strong></td>
+                 <td align="right"><input size="24" name="Name" type="text" /></td>
+             </tr>
+             <tr>
+                 <td align="left"><strong>Strasse:<sup>*</sup></strong></td>
+                 <td align="right"><input size="24" name="Strasse" type="text" /></td>
+             </tr>
+             <tr>
+                 <td align="left"><strong>PLZ:<sup>*</sup></strong></td>
+                 <td align="right"><input size="24" name="PLZ" type="text" /></td>
+             </tr>
+             <tr>
+                 <td align="left"><strong>Ort:<sup>*</sup></strong></td>
+                 <td align="right"><input size="24" name="Ort" type="text" /></td>
+             </tr>
+             <tr>
+                 <td align="left"><strong>Telefonnummer:<sup>*</sup></strong></td>
+                 <td align="right"><input size="24" name="Telefonnummer" type="text" /></td>
+             </tr>
+             <tr>
+                 <td align="left"><strong>eMail:</strong></td>
+                 <td align="right"><input size="24" name="Mail" type="text" /></td>
+             </tr>
+             <tr>
+                 <td align="left"><strong>Ihre Nachricht:</strong></td>
+                 <td align="right"></td>
+             </tr>
+			<tr>
+<td colspan="2" align="right" valign="top"><textarea name="Anmerkung" rows="5" cols="47" class="mceNoEditor"></textarea></td>
+             </tr>
+			<tr>
+                 <td><sup>*</sup> Pflichtfelder <input value="1" name="Vorname_vorhanden" type="hidden" /><input value="1" name="Name_vorhanden" type="hidden" /><input value="1" name="Strasse_vorhanden" type="hidden" /><input value="1" name="PLZ_vorhanden" type="hidden" /><input value="1" name="Ort_vorhanden" type="hidden" /><input value="1" name="Telefonnummer_vorhanden" type="hidden" /></td>
+                 <td align="right"><input value="standard" name="modul" type="hidden" /><input value="formmailer" name="modulkat" type="hidden" /><input value="Kontaktformular-Einkaufsnetzwerk" name="betreff" type="hidden" /><input class="Button" title="Klicken Sie hier um das Formular abzuschicken" value="Absenden" type="submit" /></td>
+             </tr>
+		</tbody>
+     </table>
+     <br />
+     <input type="text" name="shouldNotSee" size="24" class="shouldNotSee" value="" />
+</form>

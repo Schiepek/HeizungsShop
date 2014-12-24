@@ -1,0 +1,37 @@
+
+
+<form action="index.php" method="get" name="FormName">
+	
+	<table width="500" border="0" cellspacing="0" cellpadding="5" align="center">
+		<tbody>
+			<tr>
+				<td width="200"><strong>Schlagwortsuche:<br />
+					</strong></td>
+				<td><input type="text" class="warenkorb_suche" name="warenkorb_suche" size="18" alt="Suche" /></td>
+			</tr>
+			<tr>
+				<td valign="top" width="200"><strong>Kategorien:</strong></td>
+				<td>
+					<select name="warenkorb_kat_auswahlbox" size="1">
+						<option value="0">Alle Kategorien</option>
+						{produkte_kat_select}
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td width="200"><strong>Preis von - bis:</strong></td>
+				<td><input type="text" name="preisvon" value="0.00" size="5" class="Feldkl" /> - <input type="text" name="preisbis"  class="Feldkl" value="0.00" size="5" /> <br />
+					Bitte &quot;.&quot; (Punkt) als Dezimaltrenner eingeben</td>
+			</tr>
+			{felder}
+			<tr>
+				<td width="200"></td>
+				<td><br />
+					<input type="hidden" name="suche" value="1" />
+					<input type="hidden" name="ID" value="{warenkorbbereich}" />
+					<input type="submit" name="submitButtonName" value="Suchen" />
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</form>

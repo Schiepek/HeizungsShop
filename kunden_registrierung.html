@@ -1,0 +1,26 @@
+<form id="FormName" action="/index.php" method="post" name="FormName">
+	<table width="80%" border="0" cellspacing="0" cellpadding="2" align="center">
+		<tr>
+			<td colspan="2" align="left"><h3 style="font-weight:bold;">Nutzerdaten:</h3></td>
+		</tr>
+		{benutzername}
+		<tr>
+			<td align="left">Passwort: <sup>*</sup></td>
+			<td align="right"><input type="password" name="tri_passwort1" size="20" maxlength="20" /></td>
+		</tr>
+		<tr>
+			<td align="left">Passwort: (WH) <sup>*</sup></td>
+			<td align="right"><input type="password" name="tri_passwort2" value="" size="20" maxlength="20" /></td>
+		</tr>
+		{feldgruppen} {modul_kunden_modulloading}
+	
+		{captcha}
+		<tr>
+			<td align="left"><br/>
+				<sup>*</sup> Diese Felder m&uuml;ssen ausgef&uuml;llt werden.</td>
+			<td align="right"><br>
+				<input type="hidden" name="ID" value="{ID}"/><input type="hidden" name="tri_reg" value="1"/><input type="submit" name="submit" value="Unverbindlich anmelden" /></td>
+		</tr>
+	</table>
+	<br/>
+</form>

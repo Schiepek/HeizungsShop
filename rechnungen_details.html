@@ -1,0 +1,95 @@
+{meldung}<big>Rechnung: {rechnungen_nummer}</big>&nbsp;<strong> vom {datum}</strong>
+<br/>
+<br/>
+<form id="FormName" action="index.php" method="post" name="FormName" enctype="multipart/form-data">
+	<table border="0" cellspacing="1" cellpadding="4" class="tablelisting">
+		<tr>
+			<th width="23"></th>
+			<th width="47">Pos.:</th>
+			<th>Artikelbezeichnung:</th>
+			<th width="64">Anzahl:</th>
+			<th width="60">Steuer:</th>
+			<th align="right" width="90">Einzelpreis:</th>
+			<th align="right" width="110">Gesamtpreis:</th>
+		</tr>
+		{artikel}
+		<tr>
+			<td colspan="5" rowspan="2">
+				<table border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td width="30"><img src="Labels/pfeil.png" alt="" height="30" width="30" border="0"></td>
+						<td>
+							<select name="aktion" size="1" class="Feld">
+							{aktionen}
+							</select>
+							<input type="hidden" name="rechnung" value="{rechnung}"/>
+							<input type="submit" name="submit" value="Ausf&uuml;hren">
+							<input type="hidden" name="ID" value="{ID}"/>
+							<input type="hidden" name="aktionvorhanden" value="1"></td>
+					</tr>
+					{if_reklamationen}
+					<tr>
+						<td width="30"></td>
+						<td><br>
+							<strong>Bild hochladen:<br>
+							</strong><input type="file" name="datei" size="26" class="Feld"></td>
+					</tr>
+					{endif_reklamationen}	
+				</table>
+			</td>
+			<td align="right" nowrap width="110"><strong>Gesamtpreis (brutto):</strong></td>
+			<td align="right"><strong>{gesamtpreis_brutto} &euro;</strong></td>
+		</tr>
+		<tr>
+			<td width="23">Enthaltene MwSt:</td>
+			<td width="47"></td>
+		</tr>
+		{mwst}
+	</table>
+</form>
+<br/>
+<br>
+<table border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td colspan="2" align="left" valign="top"><h3>Rechnungsadresse:</h3></td>
+	</tr>
+	<tr>
+		<td colspan="2" align="left" valign="top"><br/>
+			<table border="0" cellspacing="1" cellpadding="4" class="tablelisting">
+				<tr>
+					<td align="left" valign="top" nowrap width="120"><strong>Firma:</strong></td>
+					<td align="left" valign="top" nowrap width="120">{rechnung_firma}</td>
+				</tr>
+				<tr>
+					<td align="left" valign="top" nowrap width="120"><strong>Name:</strong></td>
+					<td align="left" valign="top" nowrap width="120">{rechnung_name}</td>
+				</tr>
+				<tr>
+					<td align="left" valign="top" nowrap width="120"><strong>Vorname:</strong></td>
+					<td align="left" valign="top" nowrap width="120">{rechnung_vorname}</td>
+				</tr>
+				<tr>
+					<td align="left" valign="top" nowrap width="120"><strong>Adresszusatz:</strong></td>
+					<td align="left" valign="top" nowrap width="120">{rechnung_zusatz}</td>
+				</tr>
+				<tr>
+					<td align="left" valign="top" nowrap width="120"><strong>Strasse:</strong></td>
+					<td align="left" valign="top" nowrap width="120">{rechnung_strasse}</td>
+				</tr>
+				<tr>
+					<td align="left" valign="top" nowrap width="120"><strong>PLZ:</strong></td>
+					<td align="left" valign="top" nowrap width="120">{rechnung_plz}</td>
+				</tr>
+				<tr>
+					<td align="left" valign="top" nowrap width="120"><strong>Ort:</strong></td>
+					<td align="left" valign="top" nowrap width="120">{rechnung_ort}</td>
+				</tr>
+				<tr>
+					<td align="left" valign="top" nowrap width="120"><strong>Land:</strong></td>
+					<td align="left" valign="top" nowrap width="120">{rechnung_land}</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+	

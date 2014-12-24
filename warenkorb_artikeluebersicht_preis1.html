@@ -1,0 +1,29 @@
+
+
+<form action="/index.php" method="post">
+	<table width="150" border="0" cellspacing="2" cellpadding="0">
+		<tr>
+			<td>Anzahl: </td>
+			<td>
+				<div align="right">
+					<input type="hidden" name="warenkorb_artikel_hinzu" value="{warenkorb_produktid}">
+					<input type="hidden" name="warenkorb_kat" value="{warenkorb_kat}">
+					<input type="hidden" name="warenkorb_produktid" value="{warenkorb_produktid}">
+					<input type="hidden" name="ID" value="{ID}"> 
+					<input type="text" name="warenkorb_artikel_anzahl" value="1" size="3" maxlength="3" class="Feld">
+					<input type="hidden" name="seite" value="{seite}"> 
+					
+					
+					
+					</div>
+			</td>
+		</tr>
+		{anmerkung}
+		<tr>
+			<td colspan="2">
+				<div align="right">
+					<input type="submit" name="submit" value="Warenkorb" class="Button"></div>
+			</td>
+		</tr>
+	</table>
+</form>

@@ -1,0 +1,42 @@
+<hr noshade size="1"/>
+	<form id="FormName" action="index.php" method="post" name="FormName">
+	<p>Neue Produktbewertung eintragen:</p>
+	<table width="90%" border="0" cellspacing="0" cellpadding="2">
+			<tr>
+				<td align="left"><strong>Titel:</strong></td>
+				<td align="left"><input type="text" name="bewertungen_titel" size="30" maxlength="50" class="Feld"></td>
+			</tr>
+			<tr>
+				<td align="left"><strong>Ihr Kommentar:</strong></td>
+				<td align="left"><textarea name="bewertungen_artikel" rows="3" cols="40" class="Feld"></textarea></td>
+			</tr>
+			<tr>
+				<td align="left"><strong>Bewertung:</strong></td>
+				<td align="left">
+					<select name="bewertung" size="1" onchange="bewertung_bild(this.value)" id="bewertung">
+						<option value="5">Sehr gut</option>
+						<option value="4">Gut</option>
+						<option value="3">Mittelm&auml;&szlig;ig</option>
+						<option value="2">Schlecht</option>
+						<option value="1">Sehr schlecht</option>
+					</select>
+					<img src="Labels/bewertung_5.png" id="bewertungsbild" alt="" height="14" width="70" border="0">
+				</td>
+			</tr>
+			<tr>
+				<td align="left" valign="top"><input type="hidden" name="warenkorb_produktid" value="{produktid}"><input type="hidden" name="ID" value="{ID}"><input type="hidden" name="bewertung_eintragen" value="1"><input type="hidden" name="tab_aktiv" value="4"></td>
+				<td align="left"><input type="submit" name="submit" value="Eintragen" class="Button"></td>
+			</tr>
+		</table>
+	<script language="javascript" type="text/javascript">
+			$(function() 
+			{
+				//var pfad = "/templates/{template}/Labels/";
+				
+				$('#bewertung').change(function() 
+				{
+					$("#bewertungsbild").attr('src',pfad+"bewertung_"+$(this).val()+".png");
+				});
+			});
+		</script>
+</form>

@@ -1,0 +1,23 @@
+
+	<div class="box boxColumn">
+		<h3>Login</h3>
+		<div>
+			{meldung}
+			
+			<form id="formlogin" action="index.php" method="post" name="formlogin">	
+			
+				<input type="text" name="tri_benutzername" size="20" default="Email/Kundennr.:" />
+				<input type="password" name="tri_passwort" size="20" value="***" />
+				
+				<input type="hidden" name="tri_login" value="1" /><input type="hidden" name="ID" value="9" />
+				<input type="submit" name="login" value="Anmelden" />
+				
+				<br><br>
+				
+				<a href="{passwortlink}" >&raquo; Passwort vergessen?</a><br>
+				
+				<a href="{reglink}" >&raquo; Registrieren?</a>
+				
+			</form>
+		</div>
+	</div>

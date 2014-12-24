@@ -1,0 +1,24 @@
+<form id="FormName" action="index.php" method="post" name="FormName">
+	{statusausgabe}
+	<table width="80%" border="0" cellspacing="0" cellpadding="2" align="center">
+		<tr>
+			<td align="left" colspan="2" class="balken"><h3>Passwort &auml;ndern</h3></td>
+		</tr>
+		<tr>
+			<td align="left" width="204">Altes Passwort:</td>
+			<td align="right"><input class="Feld" type="password" name="pwold1" size="28"/></td>
+		</tr>
+		<tr>
+			<td align="left" width="204">Neues Passwort:</td>
+			<td align="right"><input class="Feld" type="password" name="pwnew1" size="28"/></td>
+		</tr>
+		<tr>
+			<td align="left" width="204">Neues Passwort (WH):</td>
+			<td align="right"><input class="Feld" type="password" name="pwnew2" size="28"/></td>
+		</tr>
+		<tr>
+			<td align="left" width="204"></td>
+			<td align="right"><input type="hidden" name="ID" value="{ID}"/><input type="hidden" name="pwedit" value="1"/><input type="submit" name="submit" value="&auml;ndern" /></td>
+		</tr>
+	</table>
+</form>

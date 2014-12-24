@@ -1,0 +1,22 @@
+<br><br>
+<strong class="xxnormal">Hier gehts zu Paypal</strong><br><br>
+Falls keine automatische Weiterleitung erfolgt hier klicken.
+<br>
+<br>
+<form action="https://www.paypal.com/cgi-bin/webscr" id="paypalform" name="paypalform" method="post">
+   <input type="hidden" name="cmd" value="_cart" />
+   <input type="hidden" name="upload" value="1" />
+   <input type="hidden" name="business" value="{paypal_mail}" />
+   <input type="hidden" name="item_name_1"  value="{produktbezeichnung}" />
+   <input type="hidden" name="amount" value="{preis}" />
+   <input type="hidden" name="amount_1" value="{preis}" />
+   <input type="hidden" name="currency_code" value="{waehrung}" />
+   <input type="hidden" name="return" value="{link_return}" />
+   <input type="hidden" name="cancel_return" value="{link_abort}" />
+   <input type="hidden" name="rm" value="2" />
+   <input type="hidden" name="custom" value="{kundennummer}|{ID}" />
+   <input type="submit" value="{button_text}" class="buttonpaypal" />
+   <script type="text/javascript">
+  // document.paypalform.submit()
+   </script>
+</form>

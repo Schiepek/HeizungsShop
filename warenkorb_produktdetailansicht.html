@@ -1,0 +1,51 @@
+{fehlerausgabe}
+
+<div class="box boxPage">
+	<h1>{produktname}</h1>
+
+	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td rowspan="2" align="left" valign="top" width="250"  id="zoom_content"><a href="{bild}" title="{produktname}" class="mainimage" rel="lightbox[warenkorbgallerie]"><img src="{bild_mid}" border='0' alt="{produktname}" title="{produktname}"/></a>
+				<br><div class="produkt_beschreibung">
+					<h3>Kurzbeschreibung:</h3>
+					{kurzbeschreibung}
+				</div>
+			</td>
+			<td align="left" valign="top">{warenkorb}</td>
+			<td align="right" valign="top" width="150" id="produktdetail"><big>{preis_brutto}</big><small>	inkl. {steuer} % MwSt. </small><br>
+				<a href="{versandkostenlink}"><small>zzgl. Versandkosten</small></a>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" align="left" valign="top"><br>
+			<br>
+				<h3 class="tabcontentHeader">Sonstige Informationen:</h3><br>
+				<table border="0" cellspacing="1" cellpadding="4" class="tablelisting" width="100%">
+					{lager}
+					{produkt_informationen}
+				</table>
+			
+			
+			</td>
+		</tr>
+	</table>
+	
+	{if_produkte_datenfeld_youtubecode}
+		<br/><h3 class="tabcontentHeader">Youtube-Video:</h3>{produkte_datenfeld_youtubecode}
+		{endif_produkte_datenfeld_youtubecode}
+	
+</div>
+
+<ul class="tab">
+	<li value="1" {aktiv_1}>Beschreibung</li>
+	<li value="2" {aktiv_2}>Bilder</li>
+</ul>
+<div id="tabcontent_1" class="tabcontent box boxPage">
+	<h3 class="tabcontentHeader">Beschreibung:</h3>
+	{beschreibung}
+</div>
+<div id="tabcontent_2" class="tabcontent box boxPage">
+	<h3 class="tabcontentHeader">Bilder:</h3>
+	{bilder}
+</div>
+ {sammelartikel} {verknuepfte_produkte} {sammelartikel_geschwister} {zuletzt_angezeigte_produkte}

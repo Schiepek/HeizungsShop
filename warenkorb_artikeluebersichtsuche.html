@@ -1,0 +1,25 @@
+<form id="artikeluebersicht" action="index.php" method="post" name="artikeluebersicht" class="box boxPage">
+	<h1>Suche</h1>
+	<select name="orderfeld" size="1" onchange="document.getElementById('artikeluebersicht').submit();"  style="float: right">
+		<option value="prio_asc">Beliebtheit</option>
+		<option value="titel_asc" {order_titel_asc}>Produkttitel aufsteigend</option>
+		<option value="titel_desc" {order_titel_desc}>Produkttitel absteigend</option>
+		<option value="preis_asc" {order_preis_asc}>Preis aufsteigend</option>
+		<option value="preis_desc" {order_preis_desc}>Preis absteigend</option>
+		<option value="verfuegbar_asc" {order_verfuegbar_asc}>Verf&uuml;gbarkeit aufsteigend</option>
+		<option value="verfuegbar_desc" {order_verfuegbar_desc}>Verf&uuml;gbarkeit absteigend</option>
+	</select>
+	{warenkorb_suche_hidden_felder}
+	<input type="hidden" name="seite" value="{seite}"/>
+	<input type="hidden" name="warenkorb_kat" value="{warenkorb_kat}"/>
+	<input type="hidden" name="ID" value="{ID}"/>
+	<input type="hidden" name="suche" value="1"/>
+	<input type="hidden" name="warenkorb_suche" value="{warenkorb_such}">
+	<p style="float: left">Seiten: {seiten}</p>
+	<br class="clear" />
+</form>
+{meldung}
+<div class="artikel">{artikel}</div>
+<center class="freestanding">Seiten: {seiten}</center>
+
+

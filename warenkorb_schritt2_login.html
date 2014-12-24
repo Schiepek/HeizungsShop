@@ -1,0 +1,44 @@
+<ul class="warenkorb_vorgang box">
+	<li>Bestell&uuml;bersicht</li>
+	<li class="aktiv">Login</li>
+	<li>Zahlung/Versand</li>
+	<li>Kaufen</li>
+</ul>{fehlerausgabe}
+
+
+<form id="FormName" action="index.php" method="post" name="FormName"  class="box boxPage">
+	<table width="90%" border="0" cellspacing="0" cellpadding="2" align="center">
+		<tr>
+			<td colspan="2" align="left">
+				<h3 style="font-weight:bold;">Sie sind bereits Kunde in unserem Shop?</h3>
+			</td>
+		</tr>
+		<tr>
+			<td align="left">Benutzername/E-Mail:</td>
+			<td align="right"><input class="Feld" type="text" name="tri_benutzername" size="16"/></td>
+		</tr>
+		<tr>
+			<td align="left">Passwort:</td>
+			<td align="right"><input class="Feld" type="password" name="tri_passwort"  size="16"/></td>
+		</tr>
+		<tr>
+			<td align="left"><a href="{passwort_vergessen}" class="grey">Passwort vergessen?</a></td>
+			<td align="right"><br>
+				<input type="hidden" name="ID" value="{ID}"/><input type="hidden" name="tri_login" value="1"/><input type="hidden" name="tri_logindauer" value="36000"/><input type="hidden" name="schritt" value="2"/><input type="submit" name="submitButtonName" value="weiter"/></td>
+		</tr>
+	</table>
+	<br>
+	<table width="90%" border="0" cellspacing="0" cellpadding="2" align="center">
+					<tr>
+						<td align="left"  valign="top"><h3 style="font-weight:bold;">Anmeldung</h3></td>
+					</tr>
+					<tr>
+						<td align="left">
+							Zur weiteren Bearbeitung Ihrer Bestellung ben&ouml;tigen wir Ihre Kundendaten. Diese werden ausschlie&szlig;lich zur Abwicklung Ihres Bestellvorgangs verwendet. <br/>
+							<br/>
+							<p class="button"><a href="{registrieren}">Weiter zur kostenlosen und unverbindlichen Anmeldung</a></p><br/>
+							<br/>
+						</td>
+					</tr>
+				</table>
+</form>

@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+	<title>{seitentitel}</title>
+	<meta name="author" content="{meta-autor}"/>
+	<meta name="publisher" content="{meta-publisher}"/>
+	<meta name="copyright" content="{meta-copyright}"/>
+	<meta name="keywords" content="{meta-keywords}"/>
+	<meta name="description" content="{meta-description}"/>
+	<meta name="page-topic" content="{meta-pagetopic}"/>
+	<meta name="audience" content="Alle"/>
+	<meta name="expires" content="NEVER"/>
+	<meta name="revisit-after" content="1 days"/>
+	<meta name="page-type" content="{meta-pagetyp}"/>
+	<meta name="robots" content="INDEX,FOLLOW"/>
+	<link rel="SHORTCUT ICON" href="css/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+	<link rel="stylesheet" href="css/slideshow.css" type="text/css">
+	<script type="text/javascript" src="js/jquery-1.6.1.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="js/slides.jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<a href="/" class="logo"><img src="Labels/logo.png" alt="" border="0" /></a>
+			<p class="mail">{bereiche_mail}</p>
+			<p class="hotline">{conf_telefon}</p>
+		</div>
+		<ul id="navigation">
+			{navigation}
+		</ul>
+		<div id="content_wrap">
+			{breadcrumbs}
+			<table border="0" cellspacing="0" cellpadding="0" id="content" class="fixed" align="center">
+				<tr>
+					{menu_left}
+					<td align="left" valign="top" id="page">
+					
+						<h1>Newsletterabmeldung</h1><div class="error">Ihre Abmeldung ist fehlgeschlagen oder Sie haben die Abmeldung abgebrochen</div>
+							
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="footer" class="clear">
+			{menu_informationen}
+			<div style="width:25%">
+				<h3>Kontakt</h3>			
+				<p>{conf_firmenname}<br>{conf_strasse}</p>
+				<p>{conf_land}-{conf_plz} {conf_ort}</p>
+				<p>Tel.: {conf_telefon}<br>Fax: {conf_telefax}</p>
+				<p>E-Mail: <a href="mailto:{bereiche_mail}">{bereiche_mail}</a></p>
+			</div>
+			<div style="width:20%">
+				<h3>Social Media</h3>
+				<ul>
+					<li class="facebook"><a href="#">Facebook</a></li>
+					<li class="twitter"><a href="#">Twitter</a></li>
+				</ul>
+			</div>
+			<div style="width:30%;float:right;">
+				<h3>Newsletter</h3>Jetzt unseren Newsletter bestellen und regelm&auml;&szlig;ig<br/>
+					neue Angebote bekommen!
+				
+					<form id="FormName" action="/index.php" method="post" name="FormName">
+						<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td align="left">Vorname:</td>
+								<td align="right"><input type="text" name="vorname" size="21" class="Feld" maxlength="50"></td>
+							</tr>
+							<tr>
+								<td align="left">Name:</td>
+								<td align="right"><input type="text" name="nachname" size="21" class="Feld" maxlength="50"></td>
+							</tr>
+							<tr>
+								<td align="left" nowrap="nowrap">Mail Adresse:</td>
+								<td align="right"><input type="text" name="mailadresse" size="40" class="Feld" maxlength="50"></td>
+							</tr>
+							<tr>
+								<td align="left"></td>
+								<td align="right"><input type="hidden" name="anmelden" value="1"><input type="hidden" name="ID" value="860"><input type="submit" name="submit" value="Abonnieren" class="Button"></td>
+							</tr>
+						</table>
+					</form>
+			</div>
+		</div>
+		<div class="clear copyright"><p>&copy; {jahr} - {conf_firmenname}</p> {menu_footer}</div>
+	</div>
+	<script type="text/javascript" src="js/page.engine.js"></script>
+</body>
+</html>

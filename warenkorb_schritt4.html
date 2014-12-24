@@ -1,0 +1,219 @@
+<ul class="warenkorb_vorgang box">
+	<li onclick="window.location.href='/index.php?ID={ID}&schritt=1'">Bestell&uuml;bersicht</li>
+	<li onclick="window.location.href='/index.php?ID={ID}&schritt=2'">Versand</li>
+	<li onclick="window.location.href='/index.php?ID={ID}&schritt=3'">Zahlung</li>
+	<li class="aktiv">Kaufen</li>
+</ul>
+{fehlerausgabe}
+
+<div class="box boxPage">
+
+
+
+
+<form id="FormName" action="index.php" method="post" name="FormName">
+	<table class="fixed" width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+		<tr height="25">
+			<td align="left" valign="top" width="50%" height="25">
+				<h3>Gutscheincode:<br>
+				</h3>
+			</td>
+			<td align="left" valign="top" width="50%" height="25">
+				<h3></h3>
+			</td>
+		</tr>
+		<tr>
+			<td align="left" valign="top" width="50%"><strong class="brown_dark">M&ouml;chten Sie einen Gutschein einl&ouml;sen? Ihr Gutscheincode:</strong></td>
+			<td align="left" valign="top" width="50%"><input class="Feldkl2" style="width:100px !important;" type="text" name="gutscheincode" size="24"></td>
+		</tr>
+		<tr>
+			<td align="left" valign="top" width="50%"><input type="hidden" name="schritt" value="4"><input type="hidden" name="ID" value="{ID}"><input class="Button" type="submit" name="submitgutschein" value="einl&ouml;sen"></td>
+			<td align="right" valign="top" width="50%"><br>
+			</td>
+		</tr>
+	</table>
+</form><br><br>
+<table class="fixed" width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+	<tr height="25">
+		<td align="left" valign="top" width="50%" height="25"><h3>Lieferart:<br>
+			</h3></td>
+		<td align="left" valign="top" width="50%" height="25"><h3>Zahlungsart:<br>
+			</h3></td>
+	</tr>
+	<tr>
+		<td align="left" valign="top" width="50%"><strong>{lieferart}</strong></td>
+		<td align="left" valign="top" width="50%"><strong>{zahlungsarten}</strong></td>
+	</tr>
+	<tr>
+		<td align="left" valign="top" width="50%"><br>
+			<button class="Button" onclick="window.location.href='/index.php?ID={ID}&schritt=2'" name="buttonName" type="button">&auml;ndern</button></td>
+		<td align="left" valign="top" width="50%"><br>
+			<button class="Button" onclick="window.location.href='/index.php?ID={ID}&schritt=3'" name="buttonName" type="button">&auml;ndern</button></td>
+	</tr>
+</table><br><br>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" class="fixed">
+	<tr height="25">
+		<td align="left" valign="top" width="50%" height="25"><h3>Rechnungsadresse:<br/>
+			</h3></td>
+		<td align="left" valign="top" width="50%" height="25"><h3>Lieferadresse:<br/>
+			</h3></td>
+	</tr>
+	<tr>
+		<td align="left" valign="top" width="50%" >
+			<table border="0" cellspacing="1" cellpadding="2" class="tablelisting">
+				<tr>
+					<td align="left" nowrap width="70"><strong>Anrede</strong></td>
+					<td align="left" nowrap>
+								{rechnung_anrede}
+					</td>
+				</tr>
+				<tr>
+					<td align="left" nowrap width="70"><strong>
+								Firma</strong></td>
+					<td align="left" nowrap>
+								{rechnung_firma}
+					</td>
+				</tr>
+				<tr>
+					<td align="left" nowrap width="70"><strong>Name</strong></td>
+					<td align="left" nowrap>
+								{rechnung_name}
+					</td>
+				</tr>
+				<tr>
+					<td align="left" nowrap width="70"><strong>Vorname</strong></td>
+					<td align="left" nowrap>
+								{rechnung_vorname}
+					</td>
+				</tr>
+				<tr>
+					<td align="left" nowrap width="70"><strong>Adresszusatz:</strong></td>
+					<td align="left" nowrap>
+								{rechnung_zusatz}
+					</td>
+				</tr>
+				<tr>
+					<td align="left" nowrap width="70"><strong>Strasse</strong></td>
+					<td align="left" nowrap>
+								{rechnung_strasse}
+					</td>
+				</tr>
+				<tr>
+					<td align="left" nowrap width="70"><strong>PLZ</strong></td>
+					<td align="left" nowrap>
+								{rechnung_plz}
+					</td>
+				</tr>
+				<tr>
+					<td align="left" nowrap width="70"><strong>Ort</strong></td>
+					<td align="left" nowrap>
+								{rechnung_ort}
+					</td>
+				</tr>
+				<tr>
+					<td align="left" nowrap width="70"><strong>Land</strong></td>
+					<td align="left" nowrap>
+								{rechnung_land}
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td align="left" valign="top" width="50%">
+			<table border="0" cellspacing="1" cellpadding="2" class="tablelisting">
+				<tr>
+					<td align="left" nowrap width="70"><strong>Anrede</strong></td>
+					<td align="left" nowrap>{lieferung_anrede}</td>
+				</tr>
+				<tr>
+					<td align="left" nowrap width="70"><strong>
+								Firma</strong></td>
+					<td align="left" nowrap>{lieferung_firma}</td>
+				</tr>
+				<tr>
+					<td align="left" nowrap width="70"><strong>Name</strong></td>
+					<td align="left" nowrap>{lieferung_name}</td>
+				</tr>
+				<tr>
+					<td align="left" nowrap width="70"><strong>Vorname</strong></td>
+					<td align="left" nowrap>{lieferung_vorname}</td>
+				</tr>
+				<tr>
+					<td align="left" nowrap width="70"><strong>Adresszusatz:</strong></td>
+					<td align="left" nowrap>{lieferung_zusatz}</td>
+				</tr>
+				<tr>
+					<td align="left" nowrap width="70"><strong>Strasse</strong></td>
+					<td align="left" nowrap>{lieferung_strasse}</td>
+				</tr>
+				<tr>
+					<td align="left" nowrap width="70"><strong>PLZ</strong></td>
+					<td align="left" nowrap>{lieferung_plz}</td>
+				</tr>
+				<tr>
+					<td align="left" nowrap width="70"><strong>Ort</strong></td>
+					<td align="left" nowrap>{lieferung_ort}</td>
+				</tr>
+				<tr>
+					<td align="left" nowrap width="70"><strong>Land</strong></td>
+					<td align="left" nowrap>{lieferung_land}</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td align="left" valign="top" width="50%">{teillieferung_deaktiviert}</td>
+		<td align="left" valign="top" width="50%"><br>
+			<button name="buttonName" class="Button" type="button" onclick="window.location.href='/index.php?ID={ID}&schritt=2'">&auml;ndern</button></td>
+	</tr>
+</table>
+<form id="FormName" action="index.php" method="post" name="FormName" class="box_grey">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+		<tr>
+			<td width="30" align="left"><input type="checkbox" name="warenkorb_agb" id="warenkorb_agb" value="1"/></td>
+			<td align="left"><label for="warenkorb_agb">Hiermit akzeptiere ich die <a style="cursor:pointer;font-weight:bold;" onclick='window.open("/modul.php?modul=kunden&modulkat=textausgabe&ausgabetyp=agbs", "AGBs", "width=650,height=400,left=100,top=200,status=yes,scrollbars=yes");'>AGBs</a> des Onlineshops</label></td>
+		</tr>
+	</table>
+	<br>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+		<tr>
+			<td width="30"><input type="checkbox" name="warenkorb_wiederruf" id="warenkorb_wiederruf" value="1"/></td>
+			<td align="left" nowrap><label for="warenkorb_wiederruf">Ich best&auml;tige hiermit die <a style="cursor:pointer;font-weight:bold;" onclick='window.open("/modul.php?modul=kunden&modulkat=textausgabe&ausgabetyp=widerruf", "Widerrufsbelehrung", "width=650,height=400,left=100,top=200,status=yes,scrollbars=yes");'>Widerrufsbelehrung</a> gelesen und anerkannt zu haben.</label></td>
+		</tr>
+	</table><br><br>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" class="warenkorblisting">
+		<tr>
+				<th align="left">Produkt</th>
+				<th align="left" width="30"></th>
+			<th align="left" width="110">Bestellmenge</th>
+			<th align="right" width="80">Einzelpreis</th>
+			<th align="right" width="120">Gesamtpreis</th>
+		</tr>
+		{artikel}
+		{artikel_system}
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+		<tr>
+			<td align="right"></td>
+			<td align="right" width="120"><br>
+			</td>
+		</tr>
+		<tr>
+			<td align="right"><strong>Zwischensumme</strong></td>
+			<td align="right" width="120"><strong>{zwischensumme_brutto2brutto}</strong></td>
+		</tr>
+		{mwst}
+		<tr>
+			<td align="right"><big>Gesamtsumme</big></td>
+			<td align="right" width="120"><big class="green">{gesamt_preis_brutto2brutto}</big></td>
+		</tr>
+		{skonto}
+		{skonto_mwst}
+		<tr>
+			<td align="right"></td>
+			<td align="right" width="120"><input type="hidden" name="ID" value="{ID}"/><br>
+				<input type="submit" name="submitweiter" value="Kostenpflichtig bestellen"/>
+				<input type="hidden" name="schritt" value="4"/></td>
+		</tr>
+	</table>
+</form>
+</div>

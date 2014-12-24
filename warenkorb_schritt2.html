@@ -1,0 +1,120 @@
+<ul class="warenkorb_vorgang box">
+	<li>Bestell&uuml;bersicht</li>
+	<li class="aktiv">Versand</li>
+	<li>Zahlung</li>
+	<li>Kaufen</li>
+</ul>
+
+
+
+<form id="FormName" action="index.php" method="post" name="FormName"  class="box boxPage">
+	<h3>Rechnungsadresse:</h3>
+	<p>Diese Daten sind im Kundenprofil &auml;nderbar.</p>
+	<br>
+	<table width="90%" border="0" cellspacing="1" cellpadding="2" class="tablelisting">
+		<tr height="26">
+			<td align="left" width="150" height="26"><strong>Anrede:</strong></td>
+			<td align="left" width="177" height="26">{rechnung_anrede}</td>
+		</tr>
+		<tr height="26">
+			<td align="left" width="150" height="26"><strong>Firma:</strong></td>
+			<td align="left" width="177" height="26">{rechnung_firma}</td>
+		</tr>
+		<tr height="26">
+			<td align="left" width="150" height="26"><strong>Name:</strong></td>
+			<td align="left" width="177" height="26">{rechnung_name}</td>
+		</tr>
+		<tr height="26">
+			<td align="left" width="150" height="26"><strong>Vorname:</strong></td>
+			<td align="left" width="177" height="26">{rechnung_vorname}</td>
+		</tr>
+		<tr height="26">
+			<td align="left" width="150" height="26"><strong>Adresszusatz:</strong></td>
+			<td align="left" width="177" height="26">{rechnung_zusatz}</td>
+		</tr>
+		<tr height="26">
+			<td align="left" width="150" height="26"><strong>Strasse:</strong></td>
+			<td align="left" width="177" height="26">{rechnung_strasse}</td>
+		</tr>
+		<tr height="26">
+			<td align="left" width="150" height="26"><strong>PLZ:</strong></td>
+			<td align="left" width="177" height="26">{rechnung_plz}</td>
+		</tr>
+		<tr height="26">
+			<td align="left" width="150" height="26"><strong>Ort:</strong></td>
+			<td align="left" width="177" height="26">{rechnung_ort}</td>
+		</tr>
+		<tr height="26">
+			<td align="left" width="150" height="26"><strong>Land:</strong></td>
+			<td align="left" width="177" height="26">{rechnung_land}</td>
+		</tr>
+	</table>
+	<br>
+	<br>
+	<h3>Lieferadresse:</h3>
+	<p><input type="checkbox" name="lieferung_seperat" value="1" id="checkboxlieferanschrift" {lieferung_seperat}/> Separate Lieferadresse verwenden</p>
+	<br>
+	<table width="90%" border="0" cellspacing="1" cellpadding="2" class="tablelisting">
+		<tr>
+			<td align="left" width="150"><strong>Anrede: <sup>*</sup></strong></td>
+			<td align="left">
+				<select name="lieferung_anrede" size="1" id="lieferung_anrede">
+					{lieferung_anrede} 
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td align="left" width="150"><strong>Firma:</strong></td>
+			<td align="left"><input type="text" name="lieferung_firma" id="lieferung_firma" value="{lieferung_firma}" size="24"/></td>
+		</tr>
+		<tr>
+			<td align="left" width="150"><strong>Name: <sup>*</sup></strong></td>
+			<td align="left"><input type="text" name="lieferung_name" id="lieferung_name" value="{lieferung_name}" size="24"/></td>
+		</tr>
+		<tr>
+			<td align="left" width="150"><strong>Vorname: <sup>*</sup></strong></td>
+			<td align="left"><input type="text" name="lieferung_vorname" id="lieferung_vorname" value="{lieferung_vorname}" size="24"/></td>
+		</tr>
+		<tr>
+			<td align="left" width="150"><strong>Adresszusatz:</strong></td>
+			<td align="left"><input type="text" name="lieferung_zusatz"  id="lieferung_zusatz"value="{lieferung_zusatz}" size="24"/></td>
+		</tr>
+		<tr>
+			<td align="left" width="150"><strong>Strasse: <sup>*</sup></strong></td>
+			<td align="left"><input type="text" name="lieferung_strasse" id="lieferung_strasse" value="{lieferung_strasse}" size="24"/></td>
+		</tr>
+		<tr>
+			<td align="left" width="150"><strong>PLZ: <sup>*</sup></strong></td>
+			<td align="left"><input type="text" name="lieferung_plz" id="lieferung_plz" value="{lieferung_plz}" size="24"/></td>
+		</tr>
+		<tr>
+			<td align="left" width="150"><strong>Ort: <sup>*</sup></strong></td>
+			<td align="left"><input type="text" name="lieferung_ort" id="lieferung_ort" value="{lieferung_ort}" size="24"/></td>
+		</tr>
+		<tr>
+			<td align="left" width="150"><strong>Land:</strong></td>
+			<td align="left">
+				<select name="lieferung_land" id="lieferung_land" size="1">
+					{lieferung_land} 
+				</select>
+			</td>
+		</tr>
+	</table>
+	<p><sup>*</sup> Pflichtfelder</p>
+	
+	<br>
+	<table border="0" cellspacing="0" cellpadding="4">
+		<tr >
+			<td colspan="3" align="left" valign="top"  ><h3>Versandarten:</td>
+		</tr>
+		{lieferarten}
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="2">	
+		<tr>
+			<td align="left" valign="top"  width="50%"><br>
+				<input type="submit" name="submitzurueck" value="zur&uuml;ck" /></td>
+			<td colspan="2" align="right" valign="top"><br>
+				<input type="hidden" name="schritt" value="2"/><input type="hidden" name="ID" value="{ID}"/><input type="submit" name="submitweiter" value="weiter" /></td>
+		</tr>
+	</table>
+</form>

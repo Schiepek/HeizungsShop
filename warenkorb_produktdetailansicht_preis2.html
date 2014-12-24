@@ -1,0 +1,43 @@
+<div id="formadd">
+
+	<form action="index.php" method="post" id="diverseform" name="diverseform">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td align="right" valign="top"><select name="warenkorb_artikel_hinzu" size="1" id="produktidchange">
+						<option value="{parentID}">Bitte w&auml;hlen</option>
+			{warenkorb_diversifikationen}
+					</select>
+		<input type="hidden" name="ID" value="{ID}"/>
+		<input type="hidden" name="warenkorb_kat" value="{warenkorb_kat}"/></td>
+			</tr>
+		</table>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">	
+			<tr>
+				<td align="left" valign="top" id="produkte_optionen_content">{produkte_optionen}</td>
+				<td align="right" valign="top">
+					<table border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td align="left"><strong>Menge:</strong></td>
+							<td align="right" width="75">
+								<input type="hidden" name="warenkorb_produktid" value="{warenkorb_produktid}"/>
+								<input type="text" name="warenkorb_artikel_anzahl" value="{warenkorb_artikel_anzahl}" size="3" maxlength="3" />  <input type="hidden" name="ID" value="{ID}"/>
+								<input type="hidden" name="warenkorb_kat" value="{warenkorb_kat}"/>
+								<input type="hidden" name="edit_warenkorb_posten" value="{edit_warenkorb_posten}">
+							</td>
+						</tr>
+						<tr>
+							<td align="right"><br>
+							</td>
+							<td align="right" width="75"></td>
+						</tr>
+						{anmerkung}
+						<tr>
+							<td colspan="2" align="right"><input type="submit" name="submit" value="in den Warenkorb"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</form>	
+</div>

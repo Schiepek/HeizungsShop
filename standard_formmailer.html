@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+	<title>{seitentitel}</title>
+	<meta name="author" content="{meta-autor}"/>
+	<meta name="publisher" content="{meta-publisher}"/>
+	<meta name="copyright" content="{meta-copyright}"/>
+	<meta name="keywords" content="{meta-keywords}"/>
+	<meta name="description" content="{meta-description}"/>
+	<meta name="page-topic" content="{meta-pagetopic}"/>
+	<meta name="audience" content="Alle"/>
+	<meta name="expires" content="NEVER"/>
+	<meta name="revisit-after" content="1 days"/>
+	<meta name="page-type" content="{meta-pagetyp}"/>
+	<meta name="robots" content="INDEX,FOLLOW"/>
+	<!--<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Numans' rel='stylesheet' type='text/css'>-->
+	<link href='http://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+	<link rel="SHORTCUT ICON" href="css/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+	<link rel="stylesheet" href="css/slideshow.css" type="text/css">
+	<script type="text/javascript" src="js/jquery-1.6.1.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="js/slides.jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+</head>
+<body>
+	
+	<div id="header">
+		<div class="header_wrapper box">
+			<a href="/" id="logo" class="wrapper"><img src="Labels/logo.jpg" alt="" border="0" /></a>
+			<ul id="navigation">
+				{navigation}
+			</ul>	
+			<br class="clear">
+		</div>
+	</div>
+	<div id="wrapper">
+		<table border="0" cellspacing="0" cellpadding="0" id="content" align="center">
+			<tr>
+				<td id="columnLeft" align="left" valign="top">
+					{box_kategorien}
+					{box_kontaktbreiche}
+				</td>
+				<td align="left" valign="top">
+					<div id="page" class="{class_page}"><h1>Kontakt</h1>{meldung}</div>
+				</td>
+				<td id="columnRight" align="right" valign="top">
+					{box_login}
+					
+					<div class="box boxColumn">
+						<h3>Zahlungsarten</h3>
+						<div>
+							
+							<!--BillSAFE start-->
+							<noscript>
+							<a title="Ihre Vorteile" href="http://www.billsafe.de/special/payment-info" target="_blank">
+							<img src="https://images.billsafe.de/image/image/id/3147807f43bf" style="border:0"/>
+							</a>
+							</noscript>
+							<a id="billsafeAdvantagesImageLink" title="Ihre Vorteile" href="#" style="display: none;" onclick="openPopup();">
+							<img src="https://images.billsafe.de/image/image/id/3147807f43bf" style="border:0"/>
+							</a>
+							<script type="text/javascript">
+							var link = document.getElementById('billsafeAdvantagesImageLink');
+							link.style.display = 'inline';
+							var openPopup = function () {
+							var myWindow = window.open('http://www.billsafe.de/special/payment-info', 'BillSAFE', 'width=520,height=600,left=300,top=100,scrollbars=yes');
+							myWindow.focus();
+							};
+							</script>
+							<!--BillSAFE end-->
+														
+							<!-- PayPal Logo --><table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"></td></tr><tr><td align="center"><a href="https://www.paypal.com/de/webapps/mpp/paypal-popup" title="So funktioniert PayPal" onclick="javascript:window.open('https://www.paypal.com/de/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=715, height=539); return false;"><img src="https://www.paypalobjects.com/webstatic/de_DE/i/de-pp-logo-150px.png" border="0" alt="PayPal Logo"></a></td></tr></table>
+							
+							<!-- PayPal Logo -->
+							
+							
+							<p><span style="color: #00ff00">&#x2714;</span> 4% Skonto bei Vorkasse per Banküberweisung</p>
+							<p><span style="color: #00ff00">&#x2714;</span> Nachnahme</p>
+							
+							
+						</div>
+					</div>
+					<div class="box boxColumn">
+						<h3>Unsere Vorteile</h3>
+						<div>
+							<p><span style="color: #00ff00">&#x2714;</span> umfangreiche Beratung</p>
+							<p><span style="color: #00ff00">&#x2714;</span> individuelle Erstellung von Angeboten</p>
+							<p><span style="color: #00ff00">&#x2714;</span> kurze Lieferzeiten</p>
+							
+							<!-- Beginn des Händlerbund HTML-Code -->
+<!-- Der HTML-Code darf im Sinne der einwandfreien Funktionalität nicht verändert werden! -->
+<a href="https://logo.haendlerbund.de/show.php?mid=144D431DF28" target="_blank" style="display:block;text-align:center;">
+<img src="https://www.haendlerbund.de/images/mglogo/hbm120.png" title="Händlerbund Mitglied"
+alt="Mitglied im Händlerbund" width="120" height="120" hspace="5" vspace="5" border="0" />
+</a>
+<!-- Ende des Händlerbund HTML-Code -->
+						</div>
+					</div>
+					<div class="box boxColumn">
+						<h3>Bewertungen</h3>
+						<div style="text-align:center;">
+							<!-- foxrate widget order -->
+<div id="fxrt_w_c_order"><a title="Zeige Bewertungen von 17984" href="http://www.foxrate.co.uk/17984-bewertungen.html">Zeige Bewertungen von 17984</a></div>
+<script type="text/javascript">var fxrt_login_id=17984; var fxrt_order_type_design='14';var widgetWidth = '188';
+var fxrt_url = 'live';var fxrt_lang = 'de';var profileWord = 'bewertungen';var globalAliasUser = '17984';var globalDomainUser = 'co.uk';var profileText = 'Alle%20Bewertungen';var ratingsAndReviews = 'Zeige%20Bewertungen%20von';var foxWidget = document.createElement('script'); foxWidget.type = 'text/javascript';
+foxWidget.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'foxrate.de/widgets/js/orderWidgetGeneratorAlias.js';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(foxWidget, s);</script>
+<!-- /foxrate widget order -->
+
+						</div>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>	
+	<div id="footer" class="clear">
+		<div class="wrapper_footer box">
+			{menu_footer}
+			{menu_hersteller}
+			{menu_bafa}
+			<br class="clear">
+		</div>
+	</div>
+	<script type="text/javascript" src="js/page.engine.js"></script>
+</body>
+</html>

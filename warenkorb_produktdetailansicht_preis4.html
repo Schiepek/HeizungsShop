@@ -1,0 +1,31 @@
+<form action="/index.php" method="post" name="form_warenkorb_hinzufuegen" id="form_warenkorb_hinzufuegen">
+	<table  border="0" cellspacing="0" cellpadding="2">
+		<tr>
+			<td width="75"><strong>Anzahl: </strong></td>
+			<td width="185"><input type="text" name="warenkorb_artikel_anzahl" value="1" size="3" maxlength="3" class="Feld"></td>
+		</tr>
+		{anmerkung}
+		<tr>
+			<td width="75"><strong>Von:</strong></td>
+			<td class="datumtabelle" width="185">
+				{verleihdatum_von}
+			</td>
+		</tr>
+		<tr>
+			<td width="75"><strong>Bis:</strong></td>
+			<td class="datumtabelle" width="185">
+				{verleihdatum_bis}
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" width="264">
+				<input type="submit" name="submit" value="Warenkorb" class="Button">
+				<input type="hidden" name="warenkorb_artikel_hinzu" value="{warenkorb_produktid}">
+				<input type="hidden" name="warenkorb_kat" value="{warenkorb_kat}">
+				<input type="hidden" name="warenkorb_produktid" value="{warenkorb_produktid}">
+				<input type="hidden" name="ID" value="{ID}">
+				<input type="hidden" name="edit_warenkorb_posten" value="{edit_warenkorb_posten}">
+			</td>
+		</tr>
+	</table>
+</form>
