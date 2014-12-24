@@ -237,14 +237,8 @@ center
 #footer
 {
 	height: 				171px;
-	background-color: 		#ff4a00;
 	overflow: 				hidden;
     padding-bottom:         45px;
-	/*
-	position: 				fixed;
-	width:					100%;
-	bottom:					0px;
-	*/
 }
 
 .wrapper_footer
