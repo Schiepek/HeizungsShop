@@ -190,7 +190,7 @@ center
 #logo
 {
 	display: 				block;
-	height: 				220px;
+	height: 				184px;
 	width: 					1020px;
 	overflow: hidden;
 }
@@ -203,7 +203,7 @@ center
 
 #header
 {
-	height: 				276px;
+	height: 				240px;
 	width:					100%;
 	margin-bottom: 			10px;
 	padding-bottom: 		10px;
@@ -338,7 +338,7 @@ center
 	height: 				31px;
 	line-height: 			31px;
 	text-align: 			left;
-	background: 			transparent url(../Labels/wood_line.png) no-repeat left bottom;
+	background-color: 		#ff4a00;
 	padding-left: 			15px;
 }
 #navigation ul li.active, #navigation ul li:hover
@@ -518,11 +518,8 @@ center
 }
 #navigation_produkte tr:first-child > td
 {
-	background-image: url(../Labels/wood_line.png);
-	background-repeat: no-repeat, no-repeat;
-	background-position: center -2px , left center;
-	background-color: transparent;
-    border-top:					2px solid #F3F0BD
+	background-color:       #ff4a00;
+    border-top:			    2px solid #F3F0BD
 }
 
 #navigation_produkte td
@@ -531,7 +528,7 @@ center
 	overflow: 				hidden;
 	height: 				51px;
 	vertical-align: 		middle;
-	background: 			transparent url(../Labels/wood_line.png) repeat left bottom;
+	background-color: 		#ff4a00;
 	padding: 				0 8px 0 18px;
     border-top:			    2px solid #F3F0BD
 
@@ -731,7 +728,7 @@ ul.tab li
 }
 ul.tab li.aktiv
 {
-	background: 			transparent url(../Labels/wood_line.png) no-repeat top center;
+    background-color:       #ff4a00;
 }
 .tabcontent
 {
@@ -821,7 +818,7 @@ ul.tab li.aktiv
 	bottom:					0px;
 	left: 					0px;
 	display: 				block;
-	background: 			transparent url(../Labels/wood_line_big.png) repeat top center;
+    background-color:       #ff4a00;
 	padding: 				5px 0;
 
 	color: 					#F3F0BD;
