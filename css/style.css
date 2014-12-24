@@ -243,10 +243,10 @@ center
 
 .wrapper_footer
 {
+    background-color:   #ff4a00;
 	width: 				1000px;
 	margin: 			0 auto;
 	padding: 			10px 0 0 20px;
-	background: 		transparent url(../Labels/footer_innen.png) no-repeat top  center;
 }
 
 
