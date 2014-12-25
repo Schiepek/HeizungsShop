@@ -178,18 +178,20 @@ center
 	width: 					1024px;
 	margin: 				0 auto;
 }
+
 .header_wrapper
 {
-	width: 					1020px;
-	margin: 				0 auto;
-}
-.header_wrapper
-{
-	background-color:       #ff4a00;
+    background-color:       #ff4a00;
+    margin:                 0 auto;
+    display: 				block;
+    height: 				236px;
+    width: 					1020px;
+    overflow: hidden;
+
 }
 #logo
 {
-	display: 				block;
+	display: 				inline-block;
 	height: 				184px;
 	width: 					1020px;
 	overflow: hidden;
@@ -1149,6 +1151,30 @@ li.merkzettel a
 
 
 /*Neue CSS Styles*/
+.header_rating {
+    float: right;
+    display: inline;
+}
+
+.header_logo {
+    background-image: url(../Labels/logo.png);
+    background-repeat: no-repeat;
+    background-color:  #ff4a00;
+    height: 184px;
+}
+
+.header_haendlerbund {
+    float:          right;
+    margin-top:     90px;
+    margin-right:   90px;
+}
+
+.header_navigation {
+    display: block;
+    height: 40;
+}
+
+
 .footer_fixed
 {
     position: 				fixed;
