@@ -60,11 +60,6 @@
 <div id="header">
     <div class="header_wrapper box">
         <div class="header_logo">
-            <div id="fxrt_w_c_order" class="header_rating"><a href="http://foxrate.de/esycor-GmbH-bewertungen.html"
-                                                              title="Zeige Bewertungen von esycor-GmbH" target="_blank"
-                                                              onclick="orderWidgetStatisticsClick(&quot;http://foxrate.de&quot;, &quot;17984&quot;, &quot;14&quot;);"
-                                                              style="display: block; width: 120px;"><img
-                    src="temp_delete/de.png" style="border: none;"></a></div>
             <div class="header_haendlerbund">
                 <a href="https://logo.haendlerbund.de/show.php?mid=144D431DF28" target="_blank"
                    style="float: right; text-align:center;">
@@ -72,10 +67,17 @@
                          alt="Mitglied im Händlerbund" width="80" height="80" hspace="5" vspace="5" border="0"/>
                 </a>
             </div>
+            <br class="clear">
+            <div id="fxrt_w_c_order" class="header_rating"><a href="http://foxrate.de/esycor-GmbH-bewertungen.html"
+                                                              title="Zeige Bewertungen von esycor-GmbH" target="_blank"
+                                                              onclick="orderWidgetStatisticsClick(&quot;http://foxrate.de&quot;, &quot;17984&quot;, &quot;24&quot;);"
+                                                              style="display: block; width: 254px;"><img
+                    src="http://foxrate.de/WidgetImages/esycor-GmbH/24/de.png" style="border: none;"></a>
+            </div>
         </div>
 
         <ul id="navigation">
-            <li onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)" class="level0 nav-b-2 active parent"><a
+            <li onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)" class="level0 nav-b-2 parent"><a
                     href="/Home/">Home</a></li>
             <li onmouseover="toggleMenu(this,1)" onmouseout="toggleMenu(this,0)" class="level0 nav-b-7  parent"><a
                     href="/Erfahrungsberichte/">Erfahrungsberichte</a>
@@ -146,83 +148,65 @@
             <td id="columnLeft" align="left" valign="top">
 
                 <div class="box boxColumn">
-                    <h3>Produkte</h3>
                     <table width="100%" border="0" cellspacing="0" cellpadding="0" id="navigation_produkte">
 
                         <tr>
-                            <td class="ebene1 inaktiv" parent="111"><a href="/Heizkessel/" class="">Heizkessel</a></td>
+                            <td class="ebene1_aktiv ebene1" parent="111"><a href="/Heizkessel/" class="">Heizkessel</a></td>
                         </tr>
                         <tr>
-                            <td class="ebene1 inaktiv" parent="112"><a href="/Oefen-/-Kamine-wasserfuehrend/" class="">Öfen
-                                / Kamine wasserführend</a></td>
+                            <td class="ebene2_aktiv ebene2 parent111" parent="111"><a href="/Heizkessel/Holzvergaserkessel/" class="">&raquo; Holzvergaserkessel</a></td>
                         </tr>
                         <tr>
-                            <td class="ebene1 inaktiv" parent="194"><a href="/Oefen-/-Kamine-wasserlos/" class="">Öfen /
-                                Kamine wasserlos</a></td>
+                            <td class="ebene3 inaktiv parent111" parent="111"><a href="/Heizkessel/Holzvergaserkessel/Atmos/" class="">&raquo; Atmos </a></td>
                         </tr>
                         <tr>
-                            <td class="ebene1 inaktiv" parent="237"><a href="/Oefen-/-Kamine-raumluftunabhaengig/"
-                                                                       class="">Öfen / Kamine raumluftunabhängig</a>
-                            </td>
+                            <td class="ebene3_aktiv ebene3 parent111" parent="111"><a href="/Heizkessel/Holzvergaserkessel/ThermoFlux/" class="">&raquo; ThermoFlux </a></td>
                         </tr>
                         <tr>
-                            <td class="ebene1 inaktiv" parent="113"><a href="/Ethanolkamine/" class="">Ethanolkamine</a>
-                            </td>
+                            <td class="ebene2 inaktiv parent111" parent="111"><a href="/Heizkessel/Pelletkessel/" class="">&raquo; Pelletkessel </a></td>
+                        </tr>
+                        <tr>
+                            <td class="ebene2 inaktiv parent111" parent="111"><a href="/Heizkessel/Holz/-Pelletkessel/" class="">&raquo; Holz- / Pelletkessel</a></td>
+                        </tr>
+                        <tr>
+                            <td class="ebene2 inaktiv parent111" parent="111"><a href="/Heizkessel/Holz/-Kohlekessel/" class="">&raquo; Holz- / Kohlekessel</a></td>
+                        </tr>
+                        <tr>
+                            <td class="ebene2 inaktiv parent111" parent="111"><a href="/Heizkessel/Kesselset-komplett/" class="">&raquo; Kesselset komplett</a></td>
+                        </tr>
+                        <tr>
+                            <td class="ebene1 inaktiv" parent="112"><a href="/Oefen-/-Kamine-wasserfuehrend/" class="">Öfen / Kamine wasserführend</a></td>
+                        </tr>
+                        <tr>
+                            <td class="ebene1 inaktiv" parent="194"><a href="/Oefen-/-Kamine-wasserlos/" class="">Öfen / Kamine wasserlos</a></td>
+                        </tr>
+                        <tr>
+                            <td class="ebene1 inaktiv" parent="237"><a href="/Oefen-/-Kamine-raumluftunabhaengig/" class="">Öfen / Kamine raumluftunabhängig</a></td>
+                        </tr>
+                        <tr>
+                            <td class="ebene1 inaktiv" parent="113"><a href="/Ethanolkamine/" class="">Ethanolkamine</a></td>
                         </tr>
                         <tr>
                             <td class="ebene1 inaktiv" parent="118"><a href="/Solar/" class="">Solar</a></td>
                         </tr>
                         <tr>
-                            <td class="ebene1 inaktiv" parent="22"><a href="/Pufferspeicher/"
-                                                                      class="">Pufferspeicher</a></td>
+                            <td class="ebene1 inaktiv" parent="22"><a href="/Pufferspeicher/" class="">Pufferspeicher</a></td>
                         </tr>
                         <tr>
-                            <td class="ebene1 inaktiv" parent="156"><a href="/Schornsteine-/-Rauchrohre/" class="">Schornsteine
-                                / Rauchrohre</a></td>
+                            <td class="ebene1 inaktiv" parent="156"><a href="/Schornsteine-/-Rauchrohre/" class="">Schornsteine / Rauchrohre</a></td>
                         </tr>
                         <tr>
-                            <td class="ebene1 inaktiv" parent="24"><a href="/Ofenersatzteile-/-Wartung/" class="">Ofenersatzteile
-                                / Wartung</a></td>
+                            <td class="ebene1 inaktiv" parent="24"><a href="/Ofenersatzteile-/-Wartung/" class="">Ofenersatzteile / Wartung</a></td>
                         </tr>
                         <tr>
-                            <td class="ebene1 inaktiv" parent="25"><a href="/Installation-/-Zubehoer/" class="">Installation
-                                / Zubehör</a></td>
+                            <td class="ebene1 inaktiv" parent="25"><a href="/Installation-/-Zubehoer/" class="">Installation / Zubehör</a></td>
                         </tr>
                         <tr>
-                            <td class="ebene1 inaktiv" parent="101"><a href="/Kaminverkleidung/" class="">Kaminverkleidung</a>
-                            </td>
+                            <td class="ebene1 inaktiv" parent="101"><a href="/Kaminverkleidung/" class="">Kaminverkleidung</a></td>
                         </tr>
                     </table>
                 </div>
 
-
-                <!--{box_login}-->
-                <div class="box boxColumn">
-                    <h3>Bewertungen</h3>
-
-                    <div style="text-align:center;">
-                        <!-- foxrate widget order -->
-                        <div id="fxrt_w_c_order"><a title="Zeige Bewertungen von 17984"
-                                                    href="http://www.foxrate.co.uk/17984-bewertungen.html">Zeige
-                            Bewertungen von 17984</a></div>
-                        <script type="text/javascript">var fxrt_login_id = 17984;
-                        var fxrt_order_type_design = '14';
-                        var widgetWidth = '188';
-                        var fxrt_url = 'live';
-                        var fxrt_lang = 'de';
-                        var profileWord = 'bewertungen';
-                        var globalAliasUser = '17984';
-                        var globalDomainUser = 'co.uk';
-                        var profileText = 'Alle%20Bewertungen';
-                        var ratingsAndReviews = 'Zeige%20Bewertungen%20von';
-                        var foxWidget = document.createElement('script');
-                        foxWidget.type = 'text/javascript';
-                        foxWidget.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'foxrate.de/widgets/js/orderWidgetGeneratorAlias.js';
-                        var s = document.getElementsByTagName('script')[0];
-                        s.parentNode.insertBefore(foxWidget, s);</script>
-                        <!-- /foxrate widget order -->
-                    </div>
-                </div>
                 <div class="box boxColumn">
                     <h3>Zahlungsarten</h3>
 

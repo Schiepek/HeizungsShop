@@ -95,7 +95,6 @@
 		}
 		echo  '
 		<div class="box boxColumn">
-			<h3>Produkte</h3>
 			<table width="100%" border="0" cellspacing="0" cellpadding="0" id="navigation_produkte">
 			'.warenkorb_kategorie_listing_left($GLOBALS['warenkorb_produkt_kategorien_array'],1,$warenkorbbereich).'	
 			</table>
