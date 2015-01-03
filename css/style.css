@@ -188,7 +188,7 @@ center
 {
     width: 					1020px;
     margin: 				0 auto;
-    background-color:       #763c2a;
+    background-color: #472D25;
 }
 #logo
 {
@@ -248,7 +248,7 @@ center
 
 .wrapper_footer
 {
-    background-color: #763c2a;
+    background-color: #472D25;
 	width: 				1000px;
 	margin: 			0 auto;
 	padding: 			10px 0 0 20px;
@@ -347,7 +347,7 @@ center
 	height: 				31px;
 	line-height: 			31px;
 	text-align: 			left;
-	background-color: 		#763c2a;
+	background-color: #472D25;
 	padding-left: 			15px;
 }
 #navigation ul li.active, #navigation ul li:hover
@@ -475,7 +475,7 @@ center
 	line-height: 			51px;
 	font-size: 				18px;
 	padding: 				0 0 0 13px;
-	background-color: #763c2a;
+	background-color: #472D25;
 	color: 					#ffffff;
 }
 .boxColumn > h3 strong
@@ -489,7 +489,7 @@ center
 .boxColumn > div
 {
 	padding: 				15px;
-	background-color: #763c2a;
+	background-color: #472D25;
 	color:					#000;
 }
 .boxColumn > div p
@@ -521,7 +521,7 @@ center
 	overflow: 				hidden;
 	height: 				35px;
 	vertical-align: 		middle;
-	background-color: #763c2a;
+	background-color: #472D25;
 	padding: 				0 8px 0 18px;
 
 }
@@ -737,7 +737,7 @@ ul.tab li
 }
 ul.tab li.aktiv
 {
-    background-color: #763c2a;
+    background-color: #472D25;
 }
 .tabcontent
 {
@@ -827,7 +827,7 @@ ul.tab li.aktiv
 	bottom:					0px;
 	left: 					0px;
 	display: 				block;
-    background-color: #763c2a;
+    background-color: #472D25;
 	padding: 				5px 0;
 
 	color: 					#ffffff;
@@ -1156,7 +1156,7 @@ li.merkzettel a
 .header_logo {
     background-image: url(../Labels/logo.png);
     background-repeat: no-repeat;
-    background-color: #763c2a;
+    background-color: #472D25;
     height: 184px;
 }
 
