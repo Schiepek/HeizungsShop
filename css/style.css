@@ -737,7 +737,7 @@ ul.tab li
 }
 ul.tab li.aktiv
 {
-    background-color: #472D25;
+    text-decoration: underline;
 }
 .tabcontent
 {
@@ -1061,12 +1061,12 @@ li.merkzettel a
 
 .freestanding
 {
-	border:					2px solid #ffffff;/*#622514;*/
+	border:					1px solid #ffffff;/*#622514;*/
 	padding: 				0 0 0 18px;
 	margin:					20px 0;
 	height: 				51px;
 	line-height: 			51px;
-    background-image:       url(../Labels/wood_line_big.png);
+    background-color:       #472D25;
     background-repeat:      no-repeat;
     background-size:        100%;
 	-webkit-border-radius: 	2px;
