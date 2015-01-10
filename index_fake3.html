@@ -124,6 +124,7 @@
 
                 <div id="shoppingCart_text" class="shopping_text_div">
                     <p class="shopping_text">0 Artikel</p>
+
                     <p class="shopping_text">0,00 &euro;</p>
                 </div>
             </a>
@@ -288,148 +289,238 @@
 
             </td>
             <td align="left" valign="top">
-                <div id="page" class="">
+            <div id="page" class=""><form id="artikeluebersicht" action="/index.php" method="post" name="artikeluebersicht" class="box boxPage">
+                <h1>Heizkessel</h1>
+                <select name="orderfeld" size="1" onchange="document.getElementById('artikeluebersicht').submit();"  style="float: right">
+                    <option value="prio_asc">Beliebtheit</option>
+                    <option value="titel_asc" >Produkttitel aufsteigend</option>
+                    <option value="titel_desc" >Produkttitel absteigend</option>
+                    <option value="preis_asc" >Preis aufsteigend</option>
+                    <option value="preis_desc" >Preis absteigend</option>
+                    <option value="verfuegbar_asc" >Verf&uuml;gbarkeit aufsteigend</option>
+                    <option value="verfuegbar_desc" >Verf&uuml;gbarkeit absteigend</option>
+                </select>
+                <input type="hidden" name="" value=""/>
+                <input type="hidden" name="seite" value=""/>
+                <input type="hidden" name="warenkorb_kat" value="111"/>
+                <input type="hidden" name="ID" value="6"/>
 
-                    <div class="box boxPage">
-                        <h1>Atmos DC18 S mit ASU Timer</h1>
-
-                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                            <tbody><tr>
-                                <td rowspan="2" align="left" valign="top" width="250" id="zoom_content"><a href="/onlineshop_bilder/010718-080802_Atmos-DC18-S-mit-ASU-Timer_12057_.jpg" title="Atmos DC18 S mit ASU Timer" class="mainimage" rel="lightbox[warenkorbgallerie]"><img src="/onlineshop_bilder/010718-080802_Atmos-DC18-S-mit-ASU-Timer_12057_mid.jpg" border="0" alt="Atmos DC18 S mit ASU Timer" title="Atmos DC18 S mit ASU Timer"></a>
-                                    <br><div class="produkt_beschreibung">
-                                        <h3>Kurzbeschreibung:</h3>
-                                        <li>Holzvergaserkessel</li>
-                                        <li>Leistung: 20,0 kW</li>
-                                        <li>Rauchrohranschluss: 150 mm</li>
-                                        <li>Brennmaterial: Scheitholz</li>
-                                    </div>
-                                </td>
-                                <td align="left" valign="top"><form action="/index.php" method="post" id="formadd">
-
-
-                                    <table border="0" cellspacing="0" cellpadding="0">
-                                        <tbody><tr>
-                                            <td align="right"><strong>Menge:</strong></td>
-                                            <td align="right" width="75">
-                                                <input type="text" name="warenkorb_artikel_anzahl" value="1" size="3" maxlength="3" class="Feldkl">
-                                                <input type="hidden" name="warenkorb_artikel_hinzu" value="11075">
-                                                <input type="hidden" name="warenkorb_kat" value="">
-                                                <input type="hidden" name="warenkorb_produktid" value="11075">
-                                                <input type="hidden" name="ID" value="6">
-                                                <input type="hidden" name="edit_warenkorb_posten" value="0">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td align="left"><br>
-                                            </td>
-                                            <td align="left" width="75"></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td colspan="2" align="left"><input type="submit" name="submit" value="in den Warenkorb"></td>
-                                        </tr>
-                                        </tbody></table>
-
-                                </form></td>
-                                <td align="right" valign="top" width="150" id="produktdetail"><big>2.139,00 ?</big><small>	inkl. 19 % MwSt. </small><br>
-                                    <a href="/Zahlung-und-Versand/"><small>zzgl. Versandkosten</small></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2" align="left" valign="top"><br>
-                                    <br>
-                                    <h3 class="tabcontentHeader">Sonstige Informationen:</h3><br>
-                                    <table border="0" cellspacing="1" cellpadding="4" class="tablelisting" width="100%">
-                                        <!-- Ware verfügbar -->
-                                        <tbody><tr>
-                                            <td align="left"><strong>Verfügbarkeit:</strong> </td>
-                                            <td align="left"><img src="/templates/ofen-solar/Labels/lager3.png" alt="lieferbar" align="absmiddle" border="0"></td>
-                                        </tr>
-                                        <tr>
-                                            <td align="left" width="150"><strong>Lieferzeit: </strong></td>
-                                            <td align="left">5-7 Tage</td>
-                                        </tr><tr>
-                                            <td align="left" width="150"><strong>Preis in ?/kg: </strong></td>
-                                            <td align="left">0,000</td>
-                                        </tr><tr>
-                                            <td align="left" width="150"><strong>Titel: </strong></td>
-                                            <td align="left">Atmos DC18 S mit ASU Timer</td>
-                                        </tr><tr>
-                                            <td align="left" width="150"><strong>Preis in ?/Liter: </strong></td>
-                                            <td align="left">0,000</td>
-                                        </tr><tr>
-                                            <td align="left" width="150"><strong>Artikelnummer: </strong></td>
-                                            <td align="left">01.07.18-08.08.02</td>
-                                        </tr>
-                                        </tbody></table>
-
-
-                                </td>
-                            </tr>
-                            </tbody></table>
+                <p style="float: left">Seiten: <a href="/Heizkessel_1/" class="seitenumschaltung_aktiv">1</a><a href="/Heizkessel-seite-2/" class="seitenumschaltung">2</a><a href="/Heizkessel-seite-3/" class="seitenumschaltung">3</a></p>
+                <br class="clear" />
+                <br><br>
+                <div><strong style="text-align: justify;">Hier finden Sie Heizkessel mit bestem Wirkungsgrad und hohem Bedienkomfort, welche speziell f&#252;r feste Brennstoffe wie Scheitholz, Holzbriketts, Braunkohlebriketts oder Steinkohle geeignet sind.</strong></div>
+                <br>
+            </form>
+            <h3 class="freestanding">Unterkategorien:</h3>
+            <div class="artikel">
+                <a href="/Heizkessel/Holzvergaserkessel/" class="box artikel_listing">
+                    <img src="/cmssystem/produkte/bilder/kat_119-mid" border="0" alt="Holzvergaserkessel" title="Holzvergaserkessel"/>
+                    <div><p class="head">Holzvergaserkessel</p></div>
+                </a>
+                <a href="/Heizkessel/Pelletkessel/" class="box artikel_listing">
+                    <img src="/cmssystem/produkte/bilder/kat_120-mid" border="0" alt="Pelletkessel " title="Pelletkessel "/>
+                    <div><p class="head">Pelletkessel </p></div>
+                </a>
+                <a href="/Heizkessel/Holz/-Pelletkessel/" class="box artikel_listing">
+                    <img src="/cmssystem/produkte/bilder/kat_121-mid" border="0" alt="Holz- / Pelletkessel" title="Holz- / Pelletkessel"/>
+                    <div><p class="head">Holz- / Pelletkessel</p></div>
+                </a>
+                <a href="/Heizkessel/Holz/-Kohlekessel/" class="box artikel_listing">
+                    <img src="/cmssystem/produkte/bilder/kat_123-mid" border="0" alt="Holz- / Kohlekessel" title="Holz- / Kohlekessel"/>
+                    <div><p class="head">Holz- / Kohlekessel</p></div>
+                </a>	<a href="/Heizkessel/Kesselset-komplett/" class="box artikel_listing">
+                <img src="/cmssystem/produkte/bilder/kat_124-mid" border="0" alt="Kesselset komplett" title="Kesselset komplett"/>
+                <div><p class="head">Kesselset komplett</p></div>
+            </a>
 
 
 
-                    </div>
+                <br class="clear">
+            </div>
 
-                    <ul class="tab">
-                        <li value="1" class="aktiv box">Beschreibung</li>
-                        <li value="2" class="box">Bilder</li>
-                    </ul>
-                    <div id="tabcontent_1" class="tabcontent box boxPage" style="display: block;">
-                        <h3 class="tabcontentHeader">Beschreibung:</h3>
-                        <div style="font-weight: normal;"><div></div></div><div><div><h1><strong>Holzvergaserkessel Atmos DC18 S</strong></h1></div><div style="font-weight: normal;">&nbsp;<span style="text-align: justify;">Der Holzvergaserkessel Atmos DC18 S des tschechischen Traditionsunternehmens Atmos ist mit einer Kesselleistung von 20 kW einer der Kleinsten im Bunde. Dieser Kessel kann aber trotzdem Scheithölzer mit einer Länge von bis zu 33 cm ohne Umstände fassen. Für den Korpus des Heizkessels wurde hochwertiger Stahl mit einer Stärke von 6 mm verwendet. Das robuste Material und die moderne Verbrennungstechnik sorgen dafür, dass Korrosionschäden durch Kondensatbildung an den Kesselwänden ausgeschlossen werden können. Eine leichte Bedienung des Heizgerätes ist durch die sichtbar positionierte Schaltfläche oberhalb der Kesseltür gewährleistet. Die Brennkammer wurde mit Schamottkeramik ausgekleidet, was zu einem optimalen Schutz des Kessel führt. Gute Staub- und Kohlenmonoxidwerte sowie der Einsatz eines stromsparenden Saugzuggebläses machen dieses Gerät zu einer umweltfreundlichen Heizalternative.&nbsp;</span><span style="text-align: justify; font-family: Arial; font-size: 13px;">Zur Ausstattung gehört ebenso ein ASU Timer, welcher das Lüftergebläse des Holzvergaserkessels automatisiert abschaltet, sobald der Abbrand im Kessel beendet ist. Dieser Heizkessel kann standardmäßig mit einem Pelletbrenner nachgerüstet werden.</span></div></div><div style="font-weight: normal;"><div style="text-align: justify; ">&nbsp;</div><div style="text-align: justify; ">Technische Daten:</div><div style="text-align: justify; ">&nbsp;</div><div></div><div><table height="366" border="0" cellpadding="0" cellspacing="0" width="445" style="border: thin groove; text-align: justify; font-family: Arial; font-size: smaller; font-weight: bold; background-color: #dcdcdc;"><colgroup><col width="187" style="width: 140pt;"><col width="61" style="width: 46pt;"><col width="187" style="width: 140pt;"><col width="61" style="width: 46pt;"></colgroup><tbody><tr height="20" style="height: 15pt;"><td height="20" width="70" style="height: 15pt; width: 140pt;">Leistung in kW</td><td align="center" width="61" style="border-left-style: none; width: 46pt;">&nbsp;20,0</td><td width="187" style="border-left-style: none; width: 140pt;">Kesselklasse</td><td align="center" width="61" style="border-left-style: none; border-left-width: medium; width: 46pt;">&nbsp;303-5/3</td></tr><tr height="20" style="height: 15pt;"><td height="20" style="border-top-style: none; height: 15pt;">Wirkungsgrad in %</td><td align="center" style="border-top-style: none; border-left-style: none;">&nbsp;83,3</td><td style="border-top-style: none; border-left-style: none;">BImSchV Stufe 1</td><td align="center" style="border-top-style: none; border-left-style: none;">&nbsp;ja</td></tr><tr height="20" style="height: 15pt;"><td height="20" style="border-top-style: none; height: 15pt;">Raumheizvermögen in m<sup>3</sup></td><td align="center" style="border-top-style: none; border-left-style: none; border-top-width: medium; border-left-width: medium;">&nbsp;590</td><td style="border-top-style: none; border-left-style: none;">BImSchV Stufe 2</td><td align="center" style="border-top-style: none; border-left-style: none;">&nbsp;ja</td></tr><tr height="20" style="height: 15pt;"><td height="20" style="border-top-style: none; height: 15pt;">Abmaße H x B x T in mm</td><td align="center" style="border-top-style: none; border-left-style: none;">&nbsp;1180x590x770&nbsp;</td><td style="border-top-style: none; border-left-style: none;">Bauart 1 (selbstschl. Tür)</td><td align="center" style="border-top-style: none; border-left-style: none;">&nbsp;nein</td></tr><tr height="20" style="height: 15pt;"><td height="20" style="border-top-style: none; height: 15pt;">Gewicht in kg</td><td align="center" style="border-top-style: none; border-left-style: none;">&nbsp;293,0</td><td style="border-top-style: none; border-left-style: none;">CE Zeichen</td><td align="center" style="border-top-style: none; border-left-style: none;">&nbsp;ja</td></tr><tr height="20" style="height: 15pt;"><td height="20" style="border-top-style: none; height: 15pt;">Rauchrohranschluss&nbsp;</td><td align="center" style="border-top-style: none; border-left-style: none;">&nbsp;hinten</td><td style="border-top-style: none; border-left-style: none;">AT §15a B-VG Norm</td><td align="center" style="border-top-style: none; border-left-style: none;">&nbsp;ja</td></tr><tr height="20" style="height: 15pt;"><td height="20" style="border-top-style: none; height: 15pt;">Rauchrohranschluss in mm</td><td align="center" style="border-top-style: none; border-left-style: none;">&nbsp;150</td><td style="border-top-style: none; border-left-style: none;">CH - VKF Nummer</td><td align="center" style="border-top-style: none; border-left-style: none;">&nbsp;ja</td></tr><tr height="20" style="height: 15pt;"><td height="20" style="border-top-style: none; height: 15pt;">Abgastemperatur in °C</td><td align="center" style="border-top-style: none; border-left-style: none;">&nbsp;208</td><td style="border-top-style: none; border-left-style: none;">Aschekasten</td><td align="center" style="border-top-style: none; border-left-style: none;">&nbsp;nein</td></tr><tr height="20" style="height: 15pt;"><td height="20" style="border-top-style: none; height: 15pt;">Abgasmassenstrom in g/s</td><td align="center" style="border-top-style: none; border-left-style: none;">&nbsp;12</td><td style="border-top-style: none; border-left-style: none;">Sicherheitswärmetauscher</td><td align="center" style="border-top-style: none; border-left-style: none; border-top-width: medium; border-left-width: medium;">&nbsp;ja</td></tr><tr height="20" style="height: 15pt;"><td height="20" style="border-top-style: none; height: 15pt;">Mindestkaminzug in Pa</td><td align="center" style="border-top-style: none; border-left-style: none;">&nbsp;20</td><td style="border-top-style: none; border-left-style: none;">Autom. Zuluftsteuerung&nbsp;</td><td align="center" style="border-top-style: none; border-left-style: none;">&nbsp;ja</td></tr><tr height="20" style="height: 15pt;"><td height="20" style="border-top-style: none; height: 15pt;">Länge Scheitholz in mm</td><td align="center" style="border-top-style: none; border-left-style: none;">&nbsp;330</td><td style="border-top-style: none; border-left-style: none;">Pumpensteuerung</td><td align="center" style="border-top-style: none; border-left-style: none;">&nbsp;ja</td></tr><tr height="20" style="height: 15pt;"><td height="20" style="border-top-style: none; height: 15pt;">Inhalt Füllraum in l</td><td align="center" style="border-top-style: none; border-left-style: none;">&nbsp;66,0</td><td style="border-top-style: none; border-left-style: none;">Steinkohle</td><td align="center" style="border-top-style: none; border-left-style: none;">&nbsp;nein</td></tr><tr height="20" style="height: 15pt;"><td height="20" style="border-top-style: none; height: 15pt;">Inhalt Wassertasche in l</td><td align="center" style="border-top-style: none; border-left-style: none;">&nbsp;45,0</td><td style="border-top-style: none; border-left-style: none;">Braunkohlebriketts</td><td align="center" style="border-top-style: none; border-left-style: none;">&nbsp;nein</td></tr><tr height="20" style="height: 15pt;"><td height="20" style="border-top-style: none; height: 15pt;">min. Temperatur Rücklauf in °C</td><td align="center" style="border-top-style: none; border-left-style: none;">&nbsp;65</td><td style="border-top-style: none; border-left-style: none;">Scheitholz</td><td align="center" style="border-top-style: none; border-left-style: none;">&nbsp;ja</td></tr><tr height="20" style="height: 15pt;"><td height="20" style="border-top-style: none; height: 15pt;">Anschlussspannung in V/Hz</td><td align="center" style="border-top-style: none; border-left-style: none;">&nbsp;230/50</td><td style="border-top-style: none; border-left-style: none;">Externe Pelletzufuhr</td><td align="center" style="border-top-style: none; border-left-style: none;">&nbsp;nein</td></tr></tbody></table></div><div style="text-align: justify; ">&nbsp;</div></div><div style="text-align: justify; font-weight: normal;"><br></div><div style="font-weight: normal;"></div>
-                    </div>
-                    <div id="tabcontent_2" class="tabcontent box boxPage" style="display: none;">
-                        <h3 class="tabcontentHeader">Bilder:</h3>
-                        <ul class="warenkorb-galerie" id="thumblist">
-                            <li><a href="/onlineshop_bilder/010718-080802_Atmos-DC18-S-mit-ASU-Timer_12058_.jpg" title="Brennraum Atmos" rel="lightbox[warenkorbgallerie]"><img src="/onlineshop_bilder/010718-080802_Atmos-DC18-S-mit-ASU-Timer_12058_tump.jpg" border="0" alt="Brennraum Atmos" title="Brennraum Atmos"></a></li><li><a href="/onlineshop_bilder/010718-080802_Atmos-DC18-S-mit-ASU-Timer_12059_.jpg" title="Funktion Holzvergaser" rel="lightbox[warenkorbgallerie]"><img src="/onlineshop_bilder/010718-080802_Atmos-DC18-S-mit-ASU-Timer_12059_tump.jpg" border="0" alt="Funktion Holzvergaser" title="Funktion Holzvergaser"></a></li>
-                        </ul>
-                    </div>
-                    <h3 class="freestanding">Zuletzt angezeigte Produkte:</h3>
-                    <div class="artikel">
-                        <a href="/Heizkessel/Holzvergaserkessel/Atmos-/Atmos-GS20/" class="box artikel_listing">
-                            <img src="/onlineshop_bilder/010520-080802_Atmos-GS20_11775_tump.jpg" alt="" border="0" title="Atmos GS20">
+            <h3 class="freestanding">Artikel:</h3>
+            <div class="artikel"><a href="/Heizkessel/Holz/-Pelletkessel/ThermoFlux-/HKK-Active-20BIOFLUX-25-Pelletbrenner/" class="box artikel_listing artikelbox">
+                <img src="/onlineshop_bilder/TF0009_HKK-Active-20BIOFLUX-25-Pelletbrenner_14380_tump.jpg" alt=""border="0" alt="HKK Active 20+BIOFLUX 25 Pelletbrenner" title="HKK Active 20+BIOFLUX 25 Pelletbrenner"/><big>3.615,00 &euro;</big>
+                <div>
+                    <p class="head">HKK Active 20+BIOFLUX 25 Pelletbrenner</p>
+                    &#8226; Thermoflux HKK Active 20<br />&#8226; BIOFLUX 25 Pelletbrenner<br />&#8226; Pelletsilo FH 500<div>&#8226; BAfA gef&#246;rdert</div>
+                </div>
+            </a><a href="/Heizkessel/Holzvergaserkessel/Atmos-/Atmos-DC18-S-mit-ASU-Timer/" class="box artikel_listing artikelbox">
+                <img src="/onlineshop_bilder/010718-080802_Atmos-DC18-S-mit-ASU-Timer_12057_tump.jpg" alt=""border="0" alt="Atmos DC18 S mit ASU Timer" title="Atmos DC18 S mit ASU Timer"/><big>2.139,00 &euro;</big>
+                <div>
+                    <p class="head">Atmos DC18 S mit ASU Timer</p>
+                    <li>Holzvergaserkessel</li>
+                    <li>Leistung: 20,0 kW</li>
+                    <li>Rauchrohranschluss: 150 mm</li>
+                    <li>Brennmaterial: Scheitholz</li>
+                </div>
+            </a><a href="/Heizkessel/Holzvergaserkessel/ThermoFlux-/PID-Logic-Lambda-30/" class="box artikel_listing artikelbox">
+                <img src="/onlineshop_bilder/TF0004_PID-Logic-Lambda-30_13183_tump.jpg" alt=""border="0" alt="PID Logic Lambda 30" title="PID Logic Lambda 30"/><big>3.699,00 &euro;</big>
+                <div>
+                    <p class="head">PID Logic Lambda 30</p>
+                    <li>Holzvergaserkessel</li><li>Typ: PID LOGIC Lambda 30</li><li>Nennleistung: 30,0 kW</li><li>BAFA gef&#246;rdert</li>
+                </div>
+            </a><a href="/Heizkessel/Holz/-Pelletkessel/ThermoFlux-/Kombikessel-HKP-30/" class="box artikel_listing artikelbox">
+                <img src="/onlineshop_bilder/TF0012_Kombikessel-HKP-30-_11981_tump.jpg" alt=""border="0" alt="Kombikessel HKP 30 " title="Kombikessel HKP 30 "/><big>5.400,00 &euro;</big>
+                <div>
+                    <p class="head">Kombikessel HKP 30 </p>
+                    <li>Kombikessel</li><li>Typ: HKP30</li><li>Nennleistung: 30,0 kW</li><li>BImSchV I</li>
+                </div>
+            </a><a href="/Heizkessel/Holzvergaserkessel/ThermoFlux-/PID-Logic-40/" class="box artikel_listing artikelbox">
+                <img src="/onlineshop_bilder/TF0003_PID-Logic-40_13179_tump.jpg" alt=""border="0" alt="PID Logic 40" title="PID Logic 40"/><big>2.799,00 &euro;</big>
+                <div>
+                    <p class="head">PID Logic 40</p>
+                    <li>Holzvergaserkessel</li><li>Typ: PID LOGIC 40</li><li>Nennleistung: 40,0 kW</li><li>Hersteller: ThermoFlux</li>
+                </div>
+            </a><a href="/Heizkessel/Holzvergaserkessel/ThermoFlux-/PID-Logic-25/" class="box artikel_listing artikelbox">
+                <img src="/onlineshop_bilder/TF0002_PID-Logic-25_13175_tump.jpg" alt=""border="0" alt="PID Logic 25" title="PID Logic 25"/><big>2.499,00 &euro;</big>
+                <div>
+                    <p class="head">PID Logic 25</p>
+                    <li>Holzvergaserkessel</li><li>Typ: PID LOGIC 25</li><li>Nennleistung: 25,0 kW</li><li>Hersteller: ThermoFlux</li>
+                </div>
+            </a><a href="/Heizkessel/Holzvergaserkessel/Atmos-/Atmos-DC25-GSE/" class="box artikel_listing artikelbox">
+                <img src="/onlineshop_bilder/010425-L_Atmos-DC25-GSE_11831_tump.jpg" alt=""border="0" alt="Atmos DC25 GSE" title="Atmos DC25 GSE"/><big>4.190,00 &euro;</big>
+                <div>
+                    <p class="head">Atmos DC25 GSE</p>
+                    <div>
+                        <div>
                             <div>
-                                <p>Atmos GS20</p>
                                 <div>
                                     <div>
-                                        <div>
-                                            <li>Typ: GS 20</li>
-                                            <li>Holzvergaserkessel</li>
-                                            <li>Leistung: 20,0 kW</li>
-                                            <li><div>mit ASU Timer&nbsp;</div></li></div></div>
+                                        <li>Typ: DC 25 GSE</li>
+                                        <li>Holzvergaserkessel</li>
+                                        <li>Leistung: 25,0 kW</li>
+                                        <li><div>BAFA-gef&#246;rdert</div></li>
+
+                                    </div>
                                 </div>
                             </div>
-                        </a><a href="/Oefen-/-Kamine-wasserfuehrend/Oefen-bis-10-kW/Marinella-Champagner-84-kW/" class="box artikel_listing">
-                        <img src="/onlineshop_bilder/119219001_Marinella-Champagner-84-kW_12856_tump.jpg" alt="" border="0" title="Marinella Champagner 8,4 kW">
-                        <div>
-                            <p>Marinella Champagner 8,4 kW</p>
-                            <li>BImSchV Stufe 1 und 2&nbsp;</li><li>5,1 kW Wasserleistung</li><li>150 mm Rauchrohranschluss</li><li>Abbrandautomatik</li>
                         </div>
-                    </a><a href="/Pufferspeicher/Hygienepufferspeicher/Typ-FHS-WT2-800-Liter/" class="box artikel_listing">
-                        <img src="/onlineshop_bilder/FHS-WT2-8_Typ-FHS-WT2-800-Liter_12161_tump.jpg" alt="" border="0" title="Typ FHS-WT2 800 Liter">
+                    </div>
+                </div>
+            </a><a href="/Heizkessel/Holzvergaserkessel/Atmos-/Atmos-GS20/" class="box artikel_listing artikelbox">
+                <img src="/onlineshop_bilder/010520-080802_Atmos-GS20_11775_tump.jpg" alt=""border="0" alt="Atmos GS20" title="Atmos GS20"/><big>2.790,00 &euro;</big>
+                <div>
+                    <p class="head">Atmos GS20</p>
+                    <div>
                         <div>
-                            <p>Typ FHS-WT2 800 Liter</p>
-                            <li>Hygienespeicher 800 l 2 x Solar-WT</li><li>mit Schichtfunktion</li><li>Vliesisolierung Brandschutz B1</li><li>Made in Germany</li>
-                        </div>
-                    </a><a href="/Heizkessel/Pelletkessel-/Atmos/Atmos-P21SiloFoerderschnecke/" class="box artikel_listing">
-                        <img src="/onlineshop_bilder/010121-1-020420_Atmos-P21SiloFoerderschnecke_11815_tump.jpg" alt="" border="0" title="Atmos P21+Silo+Förderschnecke">
-                        <div>
-                            <p>Atmos P21+Silo+Förderschnecke</p>
-                            <div style="font-weight: normal;"></div>
                             <div>
-                                <div style="font-weight: normal;"></div>
-                                <li>Typ: P 21</li>
-                                <li>Pelletkessel</li>
-                                <li>Heizleistung: 19,5 kW</li>
-                                <li><div>BAFA-gefördert</div></li>
+                                <li>Typ: GS 20</li>
+                                <li>Holzvergaserkessel</li>
+                                <li>Leistung: 20,0 kW</li>
+                                <li><div>mit ASU Timer&nbsp;</div></li></div></div>
+                    </div>
+                </div>
+            </a><a href="/Heizkessel/Holzvergaserkessel/Atmos-/Atmos-DC30-GSE/" class="box artikel_listing artikelbox">
+                <img src="/onlineshop_bilder/010430_Atmos-DC30-GSE_11827_tump.jpg" alt=""border="0" alt="Atmos DC30 GSE" title="Atmos DC30 GSE"/><big>4.575,00 &euro;</big>
+                <div>
+                    <p class="head">Atmos DC30 GSE</p>
+                    <div>
+                        <div>
+                            <div>
+                                <div>
+                                    <div>
+                                        <li>Typ: DC 30 GSE</li>
+                                        <li>Holzvergaserkessel</li>
+                                        <li>Leistung: 29,8 kW</li>
+                                        <li><div>BAFA-gef&#246;rdert</div></li>
 
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </a>
-                        <br class="clear">
-                    </div></div>
+                    </div>
+                </div>
+            </a><a href="/Heizkessel/Holz/-Pelletkessel/Atmos-/Atmos-DC25-GSP/" class="box artikel_listing artikelbox">
+                <img src="/onlineshop_bilder/010226-1-020420_Atmos-DC25-GSP_12042_tump.jpg" alt=""border="0" alt="Atmos DC25 GSP" title="Atmos DC25 GSP"/><big>8.995,00 &euro;</big>
+                <div>
+                    <p class="head">Atmos DC25 GSP</p>
+                    <li>Typ: DC25 GSP</li>
+                    <li>Leistung Holz: 25,0 kW</li>
+                    <li>Leistung Pellet: 20,0 kW</li>
+                    <li><div>BAFA-gef&#246;rdert</div></li>
+                </div>
+            </a><a href="/Heizkessel/Holz/-Kohlekessel/Atmos-/Atmos-KC35-S-mit-ASU-Timer/" class="box artikel_listing artikelbox">
+                <img src="/onlineshop_bilder/011235-080802_Atmos-KC35-S-mit-ASU-Timer_12048_tump.jpg" alt=""border="0" alt="Atmos KC35 S mit ASU Timer" title="Atmos KC35 S mit ASU Timer"/><big>2.790,00 &euro;</big>
+                <div>
+                    <p class="head">Atmos KC35 S mit ASU Timer</p>
+                    <li>Typ: KC 35 S</li>
+                    <li>Holz-Kohlevergaserkessel</li>
+                    <li>Leistung: 35,0 kW</li>
+                    <li>Brennstoff: Braunkohlebriketts, Steinkohle, Scheitholz</li>
+                </div>
+            </a><a href="/Heizkessel/Holz/-Kohlekessel/Atmos-/Atmos-KC25-S-mit-ASU-Timer/" class="box artikel_listing artikelbox">
+                <img src="/onlineshop_bilder/011225-080802_Atmos-KC25-S-mit-ASU-Timer_12052_tump.jpg" alt=""border="0" alt="Atmos KC25 S mit ASU Timer" title="Atmos KC25 S mit ASU Timer"/><big>2.275,00 &euro;</big>
+                <div>
+                    <p class="head">Atmos KC25 S mit ASU Timer</p>
+                    <div>
+                        <div>
+                            <li>Typ: KC 25 S</li>
+                            <li>Holz-Kohlevergaserkessel</li>
+                            <li>Leistung: 26,0 kW</li>
+                            <li>Brennstoff: Braunkohlebriketts, Steinkohle, Scheitholz</li>
+
+                        </div>
+                    </div>
+                </div>
+            </a><a href="/Heizkessel/Kesselset-komplett/ThermoFlux-/Komplett-Set-HKK-Active-40/" class="box artikel_listing artikelbox">
+                <img src="/onlineshop_bilder/KS-TF0008_Komplett-Set-HKK-Active-40_14198_tump.jpg" alt=""border="0" alt="Komplett-Set HKK Active 40" title="Komplett-Set HKK Active 40"/><big>5.490,00 &euro;</big>
+                <div>
+                    <p class="head">Komplett-Set HKK Active 40</p>
+                    <div><span style="font-family: Arial;">&#8226; Komplett-Set &nbsp;</span></div><div><span style="font-family: Arial;">&#8226; Holz- und Kohlevergaser</span></div><div><span style="font-family: Arial;">&#8226;&nbsp;</span>HKK Active 40</div>
+                </div>
+            </a><a href="/Heizkessel/Pelletkessel-/Atmos/Atmos-P31SiloFoerderschnecke/" class="box artikel_listing artikelbox">
+                <img src="/onlineshop_bilder/010131-1-020430_Atmos-P31SiloFoerderschnecke_11811_tump.jpg" alt=""border="0" alt="Atmos P31+Silo+Förderschnecke" title="Atmos P31+Silo+Förderschnecke"/><big>5.395,00 &euro;</big>
+                <div>
+                    <p class="head">Atmos P31+Silo+Förderschnecke</p>
+                    <div style="font-weight: normal;"></div>
+                    <li>Typ: P 31</li><li>Pelletkessel</li><li>Heizleistung: 30 kW</li><li><div>BAFA-gef&#246;rdert</div></li>
+                </div>
+            </a><a href="/Heizkessel/Pelletkessel-/ThermoFlux-/Pelling-50-ECOStandardbehaelter/" class="box artikel_listing artikelbox">
+                <img src="/onlineshop_bilder/TF0019_Pelling-50-ECOStandardbehaelter_12096_tump.jpg" alt=""border="0" alt="Pelling 50 ECO+Standardbehälter" title="Pelling 50 ECO+Standardbehälter"/><big>4.869,00 &euro;</big>
+                <div>
+                    <p class="head">Pelling 50 ECO+Standardbehälter</p>
+                    <li>Typ:&nbsp;Pelling 50 ECO</li><li>Nennleistung: 47,0 kW</li><li>inkl. Standardpelletbeh&#228;lter 185 kg</li><li><div>BAFA-gef&#246;rdert</div></li>
+                </div>
+            </a><a href="/Heizkessel/Pelletkessel-/ThermoFlux-/Pelling-25-ECOStandardbehaelter/" class="box artikel_listing artikelbox">
+                <img src="/onlineshop_bilder/TF0016_Pelling-25-ECOStandardbehaelter_12093_tump.jpg" alt=""border="0" alt="Pelling 25 ECO+Standardbehälter" title="Pelling 25 ECO+Standardbehälter"/><big>3.765,00 &euro;</big>
+                <div>
+                    <p class="head">Pelling 25 ECO+Standardbehälter</p>
+                    <li>Typ:&nbsp;Pelling 25 ECO</li><li>Nennleistung: 25,0 kW</li><li>inkl. Standardpelletbeh&#228;lter 75 kg</li><li>BAFA-gef&#246;rdert</li>
+                </div>
+            </a><a href="/Heizkessel/Holz/-Pelletkessel/ThermoFlux-/HKK-Active-50BIOFLUX-40-Pelletbrenner/" class="box artikel_listing artikelbox">
+                <img src="/onlineshop_bilder/TF0010_HKK-Active-50BIOFLUX-40-Pelletbrenner_14382_tump.jpg" alt=""border="0" alt="HKK Active 50+BIOFLUX 40 Pelletbrenner" title="HKK Active 50+BIOFLUX 40 Pelletbrenner"/><big>4.226,00 &euro;</big>
+                <div>
+                    <p class="head">HKK Active 50+BIOFLUX 40 Pelletbrenner</p>
+                    &#8226; Thermoflux HKK Active 50<br />&#8226; BIOFLUX 40 Pelletbrenner<br />&#8226; Pelletsilo FH 500<div><br /></div>
+                </div>
+            </a><a href="/Heizkessel/Holz/-Pelletkessel/ThermoFlux-/HKK-Active-90BIOFLUX-70-Pelletbrenner/" class="box artikel_listing artikelbox">
+                <img src="/onlineshop_bilder/TF0011_HKK-Active-90BIOFLUX-70-Pelletbrenner_14384_tump.jpg" alt=""border="0" alt="HKK Active 90+BIOFLUX 70 Pelletbrenner" title="HKK Active 90+BIOFLUX 70 Pelletbrenner"/><big>5.226,00 &euro;</big>
+                <div>
+                    <p class="head">HKK Active 90+BIOFLUX 70 Pelletbrenner</p>
+                    &#8226; Thermoflux HKK Active 90<br />&#8226; BIOFLUX 70 Pelletbrenner<br />&#8226; Pelletsilo FH 500<div>&#8226; BAfA gef&#246;rdert</div>
+                </div>
+            </a><a href="/Heizkessel/Pelletkessel-/ThermoFlux-/Pell-Flux-15Pelletsilo-500-l/" class="box artikel_listing artikelbox">
+                <img src="/onlineshop_bilder/TF0013_Pell-Flux-15Pelletsilo-500-l_12005_tump.jpg" alt=""border="0" alt="Pell-Flux 15+Pelletsilo 500 l" title="Pell-Flux 15+Pelletsilo 500 l"/><big>3.816,00 &euro;</big>
+                <div>
+                    <p class="head">Pell-Flux 15+Pelletsilo 500 l</p>
+                    <li>Typ:&nbsp;Pell-Flux 15</li><li>Nennleistung: 15,0 kW</li><li>inkl. Pelletsilo 500 Liter</li><li>BImSchV I und II</li>
+                </div>
+            </a><a href="/Heizkessel/Kesselset-komplett/ThermoFlux-/Komplett-Set-PID-Logic-25/" class="box artikel_listing artikelbox">
+                <img src="/onlineshop_bilder/KS-TF0002_Komplett-Set-PID-Logic-25_14205_tump.jpg" alt=""border="0" alt="Komplett-Set PID Logic 25" title="Komplett-Set PID Logic 25"/><big>5.049,00 &euro;</big>
+                <div>
+                    <p class="head">Komplett-Set PID Logic 25</p>
+                    <div><span style="font-family: Arial;">&#8226; Komplett-Set &nbsp;</span></div><div><span style="font-family: Arial;">&#8226; Holzvergaserkessel</span></div><div><span style="font-family: Arial;">&#8226;&nbsp;</span>PID Logic 25</div>
+                </div>
+            </a><a href="/Heizkessel/Kesselset-komplett/ThermoFlux-/Komplett-Set-PID-Logic-40/" class="box artikel_listing artikelbox">
+                <img src="/onlineshop_bilder/KS-TF0003_Komplett-Set-PID-Logic-40_14204_tump.jpg" alt=""border="0" alt="Komplett-Set PID Logic 40" title="Komplett-Set PID Logic 40"/><big>6.190,00 &euro;</big>
+                <div>
+                    <p class="head">Komplett-Set PID Logic 40</p>
+                    <div><span style="font-family: Arial;">&#8226; Komplett-Set &nbsp;</span></div><div><span style="font-family: Arial;">&#8226; Holzvergaserkessel</span></div><div><span style="font-family: Arial;">&#8226;&nbsp;</span>PID Logic 40</div>
+                </div>
+            </a></div>
+            <center class="freestanding">Seiten: <a href="/Heizkessel_1/" class="seitenumschaltung_aktiv">1</a><a href="/Heizkessel-seite-2/" class="seitenumschaltung">2</a><a href="/Heizkessel-seite-3/" class="seitenumschaltung">3</a></center>
+            </div>
             </td>
         </tr>
     </table>

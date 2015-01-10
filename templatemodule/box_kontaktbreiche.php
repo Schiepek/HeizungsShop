@@ -9,16 +9,22 @@
 		
 		$class	= ($GLOBALS['ID']==$row['ID']) ? "aktiv" : "";
 		$url	= linkpfad_erweitert($row['ID'],$row['titel'],TRUE);
-		$ausgabe.=	'<a href="'.$url.'" class="'.$class.'">'.$row['titel'].'</a><br>';
-	
+		$ausgabe.=	'
+				    <tr>
+        		        <td>
+		                    <a href="'.$url.'" class="'.$class.'">'.$row['titel'].'</a>
+				        </td>
+        		    </tr>';
 		$count++;
 	} 
 
 	echo  '
 	<div class="box boxColumn">
 		<h3>Kontakt</h3>
-		<div>'.$ausgabe.'</div>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" id="navigation_contact">
+
+		            '.$ausgabe.'
+
+		</table>
 	</div>';
-
-
 ?>
