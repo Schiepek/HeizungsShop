@@ -1145,7 +1145,7 @@ li.merkzettel a
 /*Neue CSS Styles*/
 .header_rating {
     float: right;
-    margin-top: 30px;
+    margin-top: 22px;
 }
 
 .header_logo {
@@ -1155,7 +1155,8 @@ li.merkzettel a
     height: 184px;
 }
 
-.header_haendlerbund {
+.header_kaeuferportal {
+    margin-top:     8px;
     float:          right;
 }
 
