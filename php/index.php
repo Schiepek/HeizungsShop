@@ -143,7 +143,7 @@ if(strpos($REQUEST_URI,'empty.html')===FALSE){
 				${$vari}=urldecode($cache);
 				$_GET[$vari]=urldecode($cache);
 			}elseif($tri_conf['ordnerstruktur']==TRUE){
-				if(modulvorhanden('seo')==TRUE and strlen($_SERVER['REQUEST_URI'])>3){
+				if(modulvorhanden('seo')==TRUE and strlen($_SERVER['REQUEST_URI'])>1){
 					//echo "SELECT metadescription FROM seo where pageid='".$GLOBALS[pageid]."' and seitentitel='".$_SERVER['REQUEST_URI']."' and metakeywords='url_rewrite'";
 					$pruefung=tri_db_query($GLOBALS['datenbanknamecms'], "SELECT metadescription FROM seo where pageid='".$GLOBALS[pageid]."' and seitentitel='".$_SERVER['REQUEST_URI']."' and metakeywords='url_rewrite'") or error_mysql_debugger(mysql_error(),__FILE__,__LINE__);
 					if(mysql_num_rows($pruefung)>0){
