@@ -163,6 +163,7 @@ if(strpos($REQUEST_URI,'empty.html')===FALSE){
 						}
 						//echo 'd1';
 						if($vorhanden==FALSE){
+                            $fehler404=TRUE;
 							$exp=explode('/',$_SERVER['REQUEST_URI']);
 							$exp_org=$exp;
 							$anzahl_ordnerstufen=count($exp);
@@ -177,15 +178,11 @@ if(strpos($REQUEST_URI,'empty.html')===FALSE){
 									$host  = $_SERVER['HTTP_HOST'];
 									$row = mysql_fetch_array ($pruefung);
 									header("Status: 404");
-									//die('test1234');
 									header("Location: http://$host".$exp);
-                                    $fehler404=TRUE;
 								}
 								if($exp<>'//' and (isset($tri_conf['seo_redirector'])==FALSE or $tri_conf['seo_redirector']<>FALSE) and is_int(strpos($_SERVER['REQUEST_URI'],'?'))==FALSE and $anzahl_ordnerstufen<=3){
 									header("Status: 404");
-									//die('test1235');
 									header("Location: http://".$_SERVER['HTTP_HOST']);
-                                    $fehler404=TRUE;
 								}
 							}
 						}
