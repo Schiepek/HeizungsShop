@@ -179,13 +179,13 @@ if(strpos($REQUEST_URI,'empty.html')===FALSE){
 									header("Status: 404");
 									//die('test1234');
 									header("Location: http://$host".$exp);
-									die();
+                                    $fehler404=TRUE;
 								}
 								if($exp<>'//' and (isset($tri_conf['seo_redirector'])==FALSE or $tri_conf['seo_redirector']<>FALSE) and is_int(strpos($_SERVER['REQUEST_URI'],'?'))==FALSE and $anzahl_ordnerstufen<=3){
 									header("Status: 404");
 									//die('test1235');
 									header("Location: http://".$_SERVER['HTTP_HOST']);
-									die();
+                                    $fehler404=TRUE;
 								}
 							}
 						}
@@ -451,9 +451,6 @@ if($pagevorhanden==FALSE){
 
 if($webseitenurfuerkunden==TRUE){
 	$gesamttemplate=templateeinlesen($template,"nichteingeloggt");
-}elseif($fehler404==TRUE and ($onlinefreigabe=='1' or $onlinefreigabe=='0')){
-	header("HTTP/1.0 404 Not Found");
-	$gesamttemplate=templateeinlesen($template,"fehlerseite");
 }elseif($onlinefreigabe==1){
 	header("HTTP/1.0 200 OK");
 	$gesamttemplate=templateeinlesen($template,"index");
@@ -514,7 +511,13 @@ $gesamttemplate=str_replace("{webseitenurl}",$domain,$gesamttemplate);
 		
 	//PAGE in das Template einbauen
 		$artikeltemplate=str_replace("{ID}",$ID,$artikeltemplate);
-		$gesamttemplate=str_replace("{page}",$artikeltemplate,$gesamttemplate);
+        if($fehler404) {
+            $fehlerseite=templateeinlesen($template,"fehlerseite");
+            $gesamttemplate=str_replace("{page}",$fehlerseite,$gesamttemplate);
+        } else {
+            $gesamttemplate=str_replace("{page}",$artikeltemplate,$gesamttemplate);
+        }
+
 		
 		
 	//Pfade aus dem Template anpassen (./Labels)
@@ -523,7 +526,7 @@ $gesamttemplate=str_replace("{webseitenurl}",$domain,$gesamttemplate);
 		$gesamttemplate=templatepfadanpassen($gesamttemplate,$template);
 	
 
-	//Vorherige mögliche Ausgaben löschen
+	//Vorherige mï¿½gliche Ausgaben lï¿½schen
 	//	@ob_end_clean();
 	
 	//Ladezeit bestimmmen
@@ -556,7 +559,7 @@ $gesamttemplate=str_replace("{webseitenurl}",$domain,$gesamttemplate);
 	
 	$gesamttemplate	= str_replace('src="//', 'src="/', $gesamttemplate);
 		
-	//Ausgabe an den User übermitteln
+	//Ausgabe an den User ï¿½bermitteln
 	echo $gesamttemplate;
 
 //Webseite generieren ENDE
