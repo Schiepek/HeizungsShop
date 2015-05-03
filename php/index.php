@@ -446,9 +446,7 @@ if($pagevorhanden==FALSE){
 };
 
 
-if($webseitenurfuerkunden==TRUE){
-	$gesamttemplate=templateeinlesen($template,"nichteingeloggt");
-}elseif($onlinefreigabe==1){
+if($onlinefreigabe==1){
 	header("HTTP/1.0 200 OK");
 	$gesamttemplate=templateeinlesen($template,"index");
 }elseif($onlinefreigabe=='0'){
@@ -506,14 +504,15 @@ $gesamttemplate=str_replace("{webseitenurl}",$domain,$gesamttemplate);
 			include('cmssystem/seo/modulloading2.php');
 		};
 		
-	//PAGE in das Template einbauen
-		$artikeltemplate=str_replace("{ID}",$ID,$artikeltemplate);
+	    //PAGE in das Template einbauen
         if($fehler404) {
-            $fehlerseite=templateeinlesen($template,"fehlerseite");
-            $gesamttemplate=str_replace("{page}",$fehlerseite,$gesamttemplate);
+            $page=templateeinlesen($template,"fehlerseite");
+        } else if($webseitenurfuerkunden) {
+            $page=templateeinlesen($template,"nichteingeloggt");
         } else {
-            $gesamttemplate=str_replace("{page}",$artikeltemplate,$gesamttemplate);
+            $page=str_replace("{ID}",$ID,$artikeltemplate);
         }
+        $gesamttemplate=str_replace("{page}",$page,$gesamttemplate);
 
 		
 		
