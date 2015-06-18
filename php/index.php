@@ -507,6 +507,7 @@ $gesamttemplate=str_replace("{webseitenurl}",$domain,$gesamttemplate);
 	    //PAGE in das Template einbauen
         if($fehler404) {
             $page=templateeinlesen($template,"fehlerseite");
+			header("Status: 404");
         } else if($webseitenurfuerkunden) {
             $page=templateeinlesen($template,"nichteingeloggt");
         } else {
